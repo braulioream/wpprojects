@@ -1,0 +1,497 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Theme Colourful Perú\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-03 14:49+0000\n"
+"PO-Revision-Date: 2019-04-03 14:49+0000\n"
+"Last-Translator: Staff Digital <miguel@staffdigital.pe>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-4.8.9"
+
+#: 404.php:36 templates/theme-send.php:24
+msgid "Ir al Inicio"
+msgstr ""
+
+#: footer.php:4
+msgid "SIGN UP TO RECEIVE OUR CURRENT NEWSLETTER"
+msgstr ""
+"REGÍSTRATE PARA RECIBIR NUESTRO BOLETÍN ACTUAL\n"
+
+#: footer.php:59
+msgid ""
+" Colourful Peru Travel Agency. All rights reserved. No part of this site may "
+"be reproduced without our written permission. Colourful."
+msgstr ""
+"Agencia de viajes Colourful . Todos los derechos reservados. Ninguna parte "
+"de este sitio puede reproducirse sin nuestro permiso por escrito. Colourful."
+
+#: footer.php:93
+msgid "Thanks for trust in us!"
+msgstr ""
+"Gracias por confiar en nosotros!\n"
+
+#: footer.php:94
+msgid "Our team will be contacting you as soon as possible."
+msgstr ""
+"Nuestro equipo se pondrá en contacto con usted lo antes posible.\n"
+
+#: functions.php:111 functions.php:145 functions.php:192 functions.php:253
+#: functions.php:292 functions.php:903 functions.php:1019 functions.php:1153
+msgid "starting at "
+msgstr ""
+
+#: functions.php:112 functions.php:146 functions.php:193
+msgid "find out more"
+msgstr "Conocer más"
+
+#: functions.php:374 functions.php:417 functions.php:466 functions.php:1235
+#: functions.php:1335 templates/theme-blog.php:165
+msgid "More"
+msgstr ""
+
+#: functions.php:641 functions.php:647
+msgid "from"
+msgstr ""
+
+#: functions.php:800 functions.php:904 templates/__theme-destinations.php:107
+#: templates/ajax/get-destinations.php:21
+msgid "find out more ->"
+msgstr "Conocer mas ->"
+
+#: functions.php:918
+msgid "No journeys were found matching your selection"
+msgstr ""
+
+#: functions.php:919 functions.php:968 functions.php:1033 functions.php:1166
+#: functions.php:1350 templates/theme-accommodations.php:163
+msgid "Return to list"
+msgstr ""
+
+#: functions.php:967 templates/theme-accommodations.php:162
+msgid "Search results for: "
+msgstr ""
+
+#: functions.php:1032 functions.php:1165
+msgid "No accommodations were found matching your selection"
+msgstr ""
+
+#: functions.php:1349
+msgid "No posts were found matching your selection"
+msgstr ""
+
+#: functions.php:1567
+msgid "Max: "
+msgstr ""
+
+#: functions.php:1568
+msgid "Min: "
+msgstr ""
+
+#: header.php:30
+msgid "Call Us: "
+msgstr "Llámanos:"
+
+#: header.php:44 header.php:93
+msgid "Currency: "
+msgstr ""
+"Moneda:\n"
+
+#: header.php:49 header.php:97
+msgid "USD "
+msgstr ""
+
+#: header.php:52 header.php:100
+msgid "EUR "
+msgstr ""
+
+#: header.php:55 header.php:103
+msgid "GBP "
+msgstr ""
+
+#: header.php:60 header.php:108
+msgid "Language: "
+msgstr "Idioma:"
+
+#: single-acommodation.php:11
+msgid "Check in/ Check out"
+msgstr "Llegada / Salida"
+
+#: single-acommodation.php:20
+msgid "Facilities"
+msgstr "Facilidades"
+
+#: single-acommodation.php:50 single-journey.php:54
+msgid "Starting price"
+msgstr "Precio inicial"
+
+#: single-acommodation.php:61
+msgid "Book the Accommodation"
+msgstr ""
+"Reserve el Alojamiento\n"
+
+#: single-acommodation.php:66 single-acommodation.php:69
+#: single-destination.php:69 single-destination.php:72 single-journey.php:66
+#: single-journey.php:69 single-journey.php:125 single-journey.php:127
+#: templates/theme-blog.php:129 templates/theme-suggested.php:153
+#: templates/_theme-suggested.php:113
+msgid "Create your own journey"
+msgstr ""
+"Crea tu propio viaje.\n"
+
+#: single-acommodation.php:91 single-acommodation.php:172
+#: single-acommodation.php:187
+msgid "Rooms"
+msgstr "Habitaciones"
+
+#: single-acommodation.php:92
+msgid "Fact Sheet"
+msgstr "Hoja de hechos"
+
+#: single-acommodation.php:93
+msgid "Policies"
+msgstr "Policias"
+
+#: single-acommodation.php:94
+msgid "Map"
+msgstr "Mapa"
+
+#: single-acommodation.php:103 single-destination.php:112
+#: single-journey.php:140
+msgid "Suggested journeys"
+msgstr "Paquetes sugeridos"
+
+#: single-acommodation.php:109 single-acommodation.php:112
+#: single-acommodation.php:131 single-acommodation.php:134
+#: single-acommodation.php:155 single-acommodation.php:158
+#: single-destination.php:118 single-destination.php:121
+#: single-destination.php:140 single-destination.php:143
+#: single-destination.php:162 single-destination.php:165 single-journey.php:146
+#: single-journey.php:149 single-journey.php:169 single-journey.php:172
+#: single.php:67 single.php:84 templates/theme-inicio.php:62
+#: templates/theme-inicio.php:65 templates/theme-inicio.php:86
+#: templates/theme-inicio.php:89 templates/theme-inicio.php:110
+#: templates/theme-inicio.php:113 templates/theme-inicio.php:134
+#: templates/theme-inicio.php:137
+msgid "Find out more"
+msgstr "Conocer mas "
+
+#: single-acommodation.php:125 single-destination.php:134
+msgid "Top ranked Accommodation"
+msgstr ""
+"Alojamiento mejor clasificado\n"
+
+#: single-acommodation.php:149 single-destination.php:156
+#: single-journey.php:163
+msgid "Blog"
+msgstr "Blog"
+
+#: single-acommodation.php:180 single-acommodation.php:228
+#: single-journey.php:61 single-journey.php:119
+msgid "Book now"
+msgstr "Reservar ahora"
+
+#: single-acommodation.php:217
+msgid "persons"
+msgstr "Personas"
+
+#: single-acommodation.php:221
+msgid "more"
+msgstr "Mas"
+
+#: single-acommodation.php:221
+msgid "Less"
+msgstr "Menos"
+
+#: single-acommodation.php:230
+msgid "per room"
+msgstr "por habitación"
+
+#: single-acommodation.php:267
+msgid "Booking:"
+msgstr "Reserva:"
+
+#: single-acommodation.php:299 single-journey.php:401
+msgid "Booking"
+msgstr "Reserva"
+
+#: single-destination.php:63 single-destination.php:65
+#: templates/theme-inicio.php:55
+msgid "Suggested Journeys"
+msgstr "Paquetes Sugeridos"
+
+#: single-journey.php:11
+msgid "Duration"
+msgstr "Duración "
+
+#: single-journey.php:25 templates/theme-blog.php:81
+#: templates/theme-blog.php:85 templates/theme-destinations.php:49
+#: templates/theme-destinations.php:53 templates/theme-suggested.php:83
+#: templates/theme-suggested.php:87 templates/_theme-suggested.php:47
+#: templates/_theme-suggested.php:51 templates/__theme-destinations.php:44
+#: templates/__theme-destinations.php:48
+msgid "Trip type"
+msgstr ""
+"Tipo de viaje\n"
+
+#: single-journey.php:56
+msgid "per person"
+msgstr "por persona"
+
+#: single-journey.php:106 single-journey.php:186 single-journey.php:201
+msgid "Itinerary"
+msgstr "Itinerario"
+
+#: single-journey.php:107 single-journey.php:187 single-journey.php:227
+#: templates/theme-accommodations.php:84 templates/theme-accommodations.php:88
+#: templates/theme-accommodations.php:112 templates/theme-suggested.php:127
+#: templates/theme-suggested.php:131 templates/_theme-suggested.php:90
+#: templates/_theme-suggested.php:94
+msgid "Price"
+msgstr "Precio"
+
+#: single-journey.php:108
+msgid "Tour inclusions"
+msgstr ""
+"Inclusiones del tour\n"
+
+#: single-journey.php:109
+msgid "Regulations"
+msgstr "Regulaciones"
+
+#: single-journey.php:110
+msgid "Useful info"
+msgstr "Información útil"
+
+#: single-journey.php:209
+msgid "day"
+msgstr "Día"
+
+#: single-journey.php:284
+msgid "Destination"
+msgstr "Destino"
+
+#: single-journey.php:285
+msgid "Tourist"
+msgstr "Turista"
+
+#: single-journey.php:286
+msgid "Superior tourist"
+msgstr "Turista superior"
+
+#: single-journey.php:287
+msgid "Superior"
+msgstr "Superior"
+
+#: single-journey.php:288
+msgid "Deluxe"
+msgstr "Deluxe"
+
+#: single-journey.php:309 single-journey.php:350
+msgid "Price per person: "
+msgstr ""
+
+#: single-journey.php:319
+msgid "Book Tourist"
+msgstr "Reserva Turista"
+
+#: single-journey.php:320
+msgid "Book Superior tourist"
+msgstr "Reserva Turista Superior"
+
+#: single-journey.php:321
+msgid "Book Superior"
+msgstr "Reserva Superior"
+
+#: single-journey.php:322
+msgid "Book Deluxe"
+msgstr "Reservar de lujo"
+
+#: single.php:25
+msgid "Share"
+msgstr "Compartir"
+
+#: single.php:60
+msgid "READ OTHER AMAZING STORIES"
+msgstr "LEA OTRAS HISTORIAS INCREÍBLES"
+
+#: single.php:61
+msgid "BLOG"
+msgstr ""
+
+#: single.php:69 single.php:86
+msgid "Ver Más"
+msgstr ""
+
+#: single.php:78
+msgid "SUGGESTED JOURNEYS"
+msgstr "PAQUETES SUGERIDOS"
+
+#. Name of the template
+msgid "Template - About"
+msgstr ""
+
+#. Name of the template
+msgid "Template - Accommodations"
+msgstr ""
+
+#: templates/theme-accommodations.php:11 templates/theme-accommodations.php:15
+#: templates/theme-blog.php:10 templates/theme-blog.php:14
+#: templates/theme-suggested.php:11 templates/theme-suggested.php:15
+msgid "Location"
+msgstr "Ubicación"
+
+#: templates/theme-accommodations.php:38 templates/theme-accommodations.php:76
+#: templates/theme-accommodations.php:99 templates/theme-accommodations.php:138
+#: templates/theme-blog.php:35 templates/theme-blog.php:73
+#: templates/theme-blog.php:117 templates/theme-destinations.php:41
+#: templates/theme-destinations.php:85 templates/theme-suggested.php:36
+#: templates/theme-suggested.php:75 templates/theme-suggested.php:119
+#: templates/theme-suggested.php:142 templates/_theme-suggested.php:40
+#: templates/_theme-suggested.php:83 templates/_theme-suggested.php:105
+#: templates/__theme-destinations.php:37 templates/__theme-destinations.php:73
+msgid "Apply"
+msgstr "Aplicar"
+
+#: templates/theme-accommodations.php:46 templates/theme-accommodations.php:50
+msgid "Type"
+msgstr "Tipo"
+
+#: templates/theme-accommodations.php:89 templates/theme-suggested.php:132
+msgid " "
+msgstr ""
+
+#: templates/theme-accommodations.php:108
+msgid "Bedroom"
+msgstr "Habitación"
+
+#. Name of the template
+msgid "Template - Blog"
+msgstr ""
+
+#: templates/theme-blog.php:43 templates/theme-blog.php:47
+#: templates/theme-create.php:51 templates/theme-destinations.php:11
+#: templates/theme-destinations.php:15 templates/theme-suggested.php:45
+#: templates/theme-suggested.php:49 templates/_theme-suggested.php:10
+#: templates/_theme-suggested.php:14 templates/__theme-destinations.php:8
+#: templates/__theme-destinations.php:12
+msgid "Region"
+msgstr "Region"
+
+#: templates/theme-blog.php:131 templates/theme-suggested.php:155
+msgid "Crea tu propio viaje"
+msgstr ""
+
+#. Name of the template
+msgid "Template - Contacto"
+msgstr ""
+
+#: templates/theme-contact.php:26
+msgid "Phone"
+msgstr "Teléfono "
+
+#: templates/theme-contact.php:28
+msgid "TELÉFONO"
+msgstr ""
+
+#: templates/theme-contact.php:31
+msgid "Peru"
+msgstr ""
+
+#: templates/theme-contact.php:32
+msgid "UK"
+msgstr ""
+
+#: templates/theme-contact.php:41
+msgid "Email"
+msgstr "Correo electrónico "
+
+#: templates/theme-contact.php:43
+msgid "Correo"
+msgstr ""
+
+#: templates/theme-contact.php:57
+msgid "Follow us"
+msgstr "Síguenos "
+
+#: templates/theme-contact.php:59
+msgid "Síguenos"
+msgstr ""
+
+#. Name of the template
+msgid "Template - Create Your Own Journey"
+msgstr ""
+
+#: templates/theme-create.php:46
+msgid "Mark your interests"
+msgstr ""
+
+#: templates/theme-create.php:77
+msgid "Type of Trip"
+msgstr ""
+
+#: templates/theme-create.php:102
+msgid "Time"
+msgstr ""
+
+#. Name of the template
+msgid "Template - Destinations"
+msgstr ""
+
+#: templates/theme-destinations.php:94 templates/__theme-destinations.php:82
+msgid "Show map"
+msgstr "Ver Mapa"
+
+#. Name of the template
+msgid "Template - Inicio"
+msgstr ""
+
+#: templates/theme-inicio.php:80
+msgid "Destinations"
+msgstr "Destinos"
+
+#: templates/theme-inicio.php:104
+msgid "Top Ranked Accommodations"
+msgstr ""
+
+#. Name of the template
+msgid "Template - Journeys"
+msgstr ""
+
+#. Name of the template
+msgid "Template - Enviado"
+msgstr ""
+
+#. Name of the template
+msgid "Template - Suggested Journeys"
+msgstr ""
+
+#: templates/_theme-suggested.php:95
+msgid "The average price is US$ "
+msgstr ""
+"El precio promedio es de US $.\n"
+
+#: templates/_theme-suggested.php:95
+msgid "1250"
+msgstr ""
+
+#. Name of the theme
+msgid "Theme Colourful Perú"
+msgstr ""
+
+#. Description of the theme
+msgid "Colourful Template"
+msgstr ""
+
+#. Author of the theme
+msgid "staffdigital"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://hinafu@gmail.com"
+msgstr ""

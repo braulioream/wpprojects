@@ -1,0 +1,1253 @@
+.detail_y
+	padding-top: 30px
+
+.detail_y_top
+	position: relative
+	padding-top: 30px
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 1px
+		background: $color__gradient
+		z-index: 3
+
+.detail_y_top_container
+	max-width: 1040px
+	padding: 0
+
+.detail_y__items
+	display: flex
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		background: $color__gradient
+		width: 1px
+		height: 100%
+
+.detail_y__item
+	text-align: center
+	position: relative
+	padding: 15px 1px
+	width: 20%
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		background: $color__gradient
+		width: 1px
+		height: 100%
+	&:after
+		content: ""
+		position: absolute
+		bottom: 0
+		right: 0
+		background: $color__gradient
+		height: 1px
+		width: 100%
+		opacity: 0
+	h3
+		font-size: 15px
+		font-family: $font__003
+		color: $color__002
+		margin: 0
+		margin-bottom: 15px
+		text-transform: uppercase
+
+.detail_y_duration
+	img
+		width: 30px
+		margin: 0 5px 0 0
+
+.detail_y_triptype
+	width: 40%
+
+.detail_y__item__in
+	font-size: 20px
+	font-family: $font__001
+	color: $color__001
+.single__days__journey
+	span
+		display: block
+
+.detail_y__item__inside
+	position: relative
+	z-index: 4
+	padding: 0 10px
+.detaill__images__figure
+	display: flex
+	align-items: center
+.detail_y__images
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	z-index: 3
+	justify-content: center
+	align-items: center
+	width: 100%
+	justify-content: center
+	&.active
+		width: calc(100% - 35px)
+	figure
+		margin: 0
+		margin: 5px 10px
+		padding: 0
+		position: relative
+		width: 35px
+		&:last-child
+			margin-right: 0
+		img
+			max-width: 100%
+			height: auto
+	h3
+		position: absolute
+		top: -28px
+		left: 50%
+		transform: translateX(-50%)
+		text-align: center
+		font-size: 13px
+		color: white
+		background-color: black
+		padding: 5px
+		font-family: $font__002
+		opacity: 0
+		transition: all .3s ease-in-out
+		display: inline-block
+		white-space: nowrap
+
+@media all and (max-width: 1024px)
+	.detail_y__images.active
+		width: 100% !important
+
+.detaill__punts
+	flex-wrap: wrap
+	width: 30px
+	justify-content: space-between
+	display: none
+	cursor: pointer
+	&.active
+		display: flex
+	span
+		width: 4px
+		height: 6px
+		background: $negro
+		&:last-child
+			margin-right: 0
+.grados__temperatura
+	font-size: 18px
+	display: block
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: flex-start
+.max__temperatura, .min__temperatura
+	font-size: 10px
+	width: 100%
+	display: block
+
+.detaill__box
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	position: absolute
+	bottom: -50px
+	right: 5px
+
+	z-index: -1
+	visibility: hidden
+	opacity: 0
+	transition: all .3s ease-in-out
+	&.active
+		visibility: visible
+		opacity: 1
+		z-index: 2
+.detaill__box__ctn
+	background-color: white
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.25)
+	border: 1px solid $negro
+	width: auto
+	padding: 10px
+	box-sizing: border-box
+	display: flex
+	flex-wrap: wrap
+	border-radius: 3px
+	position: relative
+	height: 50px
+	figure
+		margin: 0 10px 0 0
+		display: flex
+		align-items: center
+		padding: 0
+		position: relative
+		width: 30px
+		&:last-child
+			margin-right: 0
+		img
+			max-width: 100%
+			height: auto
+
+		&:last-child
+			margin: 0
+	h3
+		position: absolute
+		top: -20px
+		left: 50%
+		transform: translateX(-50%)
+		text-align: center
+		font-size: 13px
+		color: white
+		background-color: black
+		padding: 5px
+		font-family: $font__002
+		opacity: 0
+		transition: all .3s ease-in-out
+		display: inline-block
+		white-space: nowrap
+		z-index: 1000
+	&:before, &:after
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-style: solid
+	&:before
+		top: -11px 
+		right: 17px
+		border-width: 0 10px 10px 10px
+		border-color: transparent transparent $negro transparent
+	&:after
+		top: -10px 
+		right: 17px
+		border-width: 0 10px 10px 10px
+		border-color: transparent transparent $blanco transparent
+.detail_y_price
+	span
+		font-size: 20px
+		font-family: $font__001
+		color: $color__001
+		display: block
+
+.detail_y_links
+	.g__button
+		display: block
+		min-width: 145px
+		max-width: 150px
+		margin: 0 auto
+		span, input
+			padding: 10px 25px
+
+.detail_y__item_link
+	margin: 15px auto 0 auto
+	width: 100%
+	max-width: 150px
+	display: inline-block
+	font-size: 11px
+	padding: 5px
+	color: $blanco
+	font-family: $font__001
+	background: $color__001
+	box-sizing: border-box
+	border: 1px solid $negro
+
+@media screen and (min-width: 1025px)
+	.detail_y__images, .detaill__box__ctn
+		figure:hover
+			h3
+				opacity: 1 !important
+	.detail_y__item_link:hover
+		background: $blanco
+		color: $negro
+
+
+@media screen and (max-width: 1024px)
+	.detail_y_top:before
+		display: none
+
+	.detail_y__items
+		flex-wrap: wrap
+
+	.detail_y__item
+		width: 33.33%
+		display: flex
+		justify-content: center
+		&:after
+			opacity: 1
+		&.detail_y_links
+			&:before
+				opacity: 0
+		&.detail_y_triptype
+			width: 100%
+			order: 4
+			&:before
+				opacity: 0
+
+	.detail_y__item__inside
+		padding: 0 10px
+
+	.detail_y__item
+		padding: 15px 0
+
+	.detail_y__images, .detaill__box__ctn
+		figure:hover
+			h3
+				opacity: 1 !important
+	.detaill__box__ctn
+		h3
+			top: -27px !important
+			z-index: 100000000
+
+	.detail_y__item_link:hover
+		background: $blanco
+		color: $negro
+
+@media screen and (max-width: 767px)
+	.detail_y__item h3
+		font-size: 10px
+
+	.detail_y__item__in
+		font-size: 12px
+
+	.detail_y_price span
+		font-size: 12px
+
+	.detail_y_links .g__button
+		min-width: auto
+		height: 30px
+		span, input
+			padding: 10px 5px
+			font-size: 10px
+
+	
+
+
+//info
+
+.detail_y_info
+	padding: 30px 0
+	.book_now
+		min-width: 120px
+	.book_now
+		span, input
+			padding: 10px 25px
+.buttons__journeys
+	.book_now
+		width: calc(20% - 19px)
+		text-align: center
+		span
+			padding: 10px 5px
+
+.detail_y__popups
+	display: flex
+	justify-content: space-between
+	margin-top: 40px
+
+.detail_y_info__container
+	max-width: 810px
+
+.detail_y_info__title
+	.title__general__title
+		p
+			margin: 0
+		h3
+			a
+				font-style: normal
+				color: $color__003
+				text-transform: uppercase
+				position: relative
+				padding: 0 10px 0 0
+				&:before
+					content: "-"
+					color: $color__003
+					position: absolute
+					right: 0
+				&:last-child
+					&:before
+						display: none
+
+
+@media screen and (max-width: 767px)
+	.detail_y__popups
+		flex-wrap: wrap
+		justify-content: center
+
+	.detail_y_info .book_now
+		min-width: auto
+		margin: 5px
+		span, input
+			font-size: 11px
+			padding: 10px 15px
+	.buttons__journeys
+		.book_now
+			width: auto
+
+	.detail_y_info
+		.content__styles__all
+			font-size: 12px
+
+//live
+.detail_y__live
+	padding: 40px 20px
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $negro
+		opacity: .4
+
+.detail_y__live__article
+	position: relative
+	padding: 35px 35px 60px 35px
+	box-sizing: border-box
+	text-align: center
+	h3
+		font-family: $font__003
+		text-transform: uppercase
+		color: $blanco
+		font-size: 15px
+		margin: 0
+		margin-bottom: 35px
+
+.detail_y__live__article
+	position: relative
+	max-width: 347px
+	width: 100%
+	margin: auto
+	&:before
+		content: ""
+		background: 0 0
+		border: 2px solid
+		background: transparent
+		color: #fff
+		font-weight: 700
+		width: 100%
+		display: block 
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		left: 0
+		border-image: $color__gradient
+		border-width: 2px
+		border-image-slice: 1
+		text-decoration: none
+		transition: all .2s
+
+.detail_y__live__article__inside
+	position: relative
+	z-index: 5
+	.g__button
+		min-width: 145px
+	.book_now_white
+		span, input
+			padding: 10px 25px
+
+.detail_y__live__item__link
+	margin: 0
+	margin-top: 15px
+	display: block
+	a
+		display: inline-block
+		font-size: 11px
+		padding: 5px 10px
+		color: $negro
+		font-family: $font__002
+		background: $blanco
+
+.detail_y__experiencie
+	padding-top: 60px
+	padding-bottom: 60px
+
+.detail_y__experiencie__title
+	margin-bottom: 30px
+	padding: 0 15px
+	box-sizing: border-box
+
+.detail_y__experiencie__items
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	max-width: 1210px
+
+.detail_y__experiencie__item
+	width: 23.5%
+	margin: 0
+	margin-right: 2%
+	&:last-child
+		margin-right: 0
+	&:hover
+		&:nth-child(4n+1)
+			figure >span
+				background: rgba(255, 0, 0, 0.6)
+		&:nth-child(4n+2)
+			figure >span
+				background: rgba(255, 128, 0, 0.6)
+		&:nth-child(4n+3)
+			figure >span
+				background: rgba(151, 181, 0, 0.6)
+		&:nth-child(4n)
+			figure >span
+				background: rgba(0, 181, 141, 0.6)
+
+
+@media screen and (max-width: 1024px)
+	.detail_y__experiencie
+		padding-top: 55px
+		padding-bottom: 55px
+	.detail_y__live__item__link
+		max-width: 148px
+		margin-right: auto
+		margin-left: auto
+		background: $color__gradient
+		height: 23px
+		a
+			padding-bottom: 3px
+			padding-top: 3px
+
+@media screen and (max-width: 767px)
+	.detail_y__experiencie__items
+		justify-content: flex-start
+	.detail_y__experiencie
+		padding-top: 45px
+		padding-bottom: 45px
+
+	.detail_y__experiencie__item
+		width: 49%
+		margin-right: 2% !important
+		margin-bottom: 2%
+		position: relative
+		&:before
+			content: ""
+			display: block
+			padding-bottom: 100%
+		&:nth-child(even)
+			margin-right: 0 !important
+
+	.detail_y__experiencie__item.g__item__one
+		figure
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+	
+
+//blog
+.detail_y__more
+	padding-bottom: 30px
+	.borde-colourful-gn
+		max-width: 970px
+		margin: auto
+		width: 100%
+
+.detail_y__more__title
+	margin-bottom: 30px
+	padding-top: 40px
+
+.detail_y__more__items
+	display: flex
+	flex-wrap: wrap
+	max-width: 1210px
+
+.detail_y__more__item
+	width: 32%
+	margin: 0
+	margin-right: 2%
+	&:last-child
+		margin-right: 0
+
+@media screen and (max-width: 767px)
+	.detail_y__more__item
+		width: 100%
+		margin-right: 0
+		margin-bottom: 15px
+		&:last-child
+			margin-bottom: 0
+	.detail_y__more 
+		.borde-colourful-gn
+			width: 80%
+
+//pop up
+
+
+
+body.active-overlay
+	overflow: hidden
+	// overflow: scroll
+	-webkit-overflow-scrolling: auto
+
+.pop__up__y__wrap.active
+	.pop__up__y__overlay
+		opacity: .5
+		visibility: visible
+		pointer-events: auto
+	.pop__up__y
+		opacity: 1
+		visibility: visible
+		pointer-events: auto
+		
+.pop__up__y__overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: $negro
+	opacity: 0
+	visibility: hidden
+	transition: all .25s linear
+	z-index: 1000
+	pointer-events: none
+
+.pop__up__y
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, - 50%)
+	margin: auto
+	max-width: 760px
+	width: 95%
+	background: $blanco
+	height: 555px
+	z-index: 1100
+	opacity: 0
+	visibility: hidden
+	pointer-events: none
+
+	
+.pop__up__y__close
+	display: block
+	cursor: pointer
+	width: 15px
+	height: 15px
+	background: url('../images/iconox-black.svg') 0 0 no-repeat
+	background-size: 100%
+	position: absolute
+	top: 13px
+	right: 20px
+	z-index: 20
+
+.pop__up__y__nav
+	display: flex
+	height: 40px
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 1px
+		background: $color__gradient
+
+.pop__up__y__btn
+	width: 16.666%
+	margin: 0
+	text-align: center
+	padding: 10px
+	box-sizing: border-box
+	transition: all .2s linear
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		right: 0
+		top: 0
+		width: 1px
+		height: 100%
+		background: $color__gradient
+	&:after
+		content: ""
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 1px
+		background: $color__gradient
+	span
+		font-size: 13px
+		font-family: $font__003
+	&.active
+		&:after
+			background: $blanco
+
+.pop__up__y__container
+	height: 100%
+
+
+//tab
+.pop__up__y__content__all
+	position: relative
+	height: 100%
+	
+.pop__up__y__content
+	position: absolute
+	top: 0
+	opacity: 0
+	visibility: hidden
+	height: 100%
+	&.active
+		opacity: 1
+		visibility: visible
+		position: relative
+
+.pop__up__y__content__in
+	padding: 30px
+	box-sizing: border-box
+	height: calc(100% - 40px)
+	&.Map, &.Mapa, &.map, &.mapa
+		padding: 0
+
+.pop__up__y__content__scroll
+	height: 100%
+	overflow: auto
+
+.pop__up__y__mobile__title
+	position: relative
+	padding: 10px
+	box-sizing: border-box
+	text-align: center
+	height: 46px
+	display: flex
+	align-items: center
+	justify-content: center
+	display: none
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 1px
+		background: $color__gradient
+	h3
+		font-size: 12px
+		text-transform: uppercase
+		color: $color__001
+		margin: 0
+
+.pop__up__y__content__in__edit
+	font-size: 13px
+	font-family: $font__001
+	color: $color__001
+	line-height: 1.4
+	padding-right: 10px
+	strong
+		// font-weight: normal
+	a
+		color: $color__002
+	h1, h2, h3, h4, h5, h6
+		line-height: 1.1
+		margin: 0 0 10px 0
+	h1
+		font-family: $font__003
+		font-size: 15px
+		margin-bottom: 2px
+	h2
+		font-size: 12px
+		font-family: $font__006
+		color: $color__003
+	li > ul, li > ol
+		padding: 15px 0 15px 25px
+	li > ul:last-child, li > ol:last-child
+		padding-bottom: 0
+	ul
+		padding-left: 25px
+		text-align: left
+		li
+			margin-bottom: 5px
+	ol
+		padding-left: 25px
+		text-align: left
+		li
+			margin-bottom: 5px
+	iframe
+		width: 100%
+		max-width: 100%
+	img
+		max-width: 100%
+		height: auto
+	blockquote
+		background: #efefef
+		padding: 20px
+		margin: 10px 0
+		p:last-child
+			margin: 0
+@media screen and (max-width: 767px)
+	.pop__up__y__content__in__edit
+		font-size: 10px
+
+//itinerary
+.single_itinerary__list
+	margin-bottom: 10px
+	padding-left: 20px
+	position: relative
+	padding-right: 10px
+	&:last-child
+		margin-bottom: 0
+	hgroup
+		transition: all .2s linear
+		border-bottom: 1px solid $color__001
+		cursor: pointer
+		&:before
+			content: "+"
+			position: absolute
+			top: -6px
+			left: 0
+			font-size: 25px
+			color: $color__001
+		&.active
+			//border-bottom: 1px solid $blanco
+			&:before
+				content: "-"
+		h4
+			text-transform: uppercase
+			font-family: $font__004
+			color: $color__001
+			font-size: 16px
+			margin-bottom: 5px
+		h3
+			font-family: $font__003
+			font-size: 14px
+			color: $color__003
+			margin-bottom: 5px
+		
+	section
+		font-family: $font__001
+		font-size: 14px
+		color: $color__001
+		line-height: 1.3
+		display: none
+		padding: 10px 0
+		&.active
+			display: block
+@media screen and (max-width: 767px)
+	.single_itinerary__list
+		section
+			font-size: 12px
+
+
+//tables
+.table__g__price__buttons
+	margin-top: 25px
+	display: flex
+	justify-content: flex-end
+	.g__button
+		min-width: auto
+		width: 18%
+		height: auto
+		margin: 0 7px
+		span
+			padding: 10px 10px
+			box-sizing: border-box
+			font-size: 11px
+
+
+.table__g__price__mobile
+	display: none
+
+.table__g--mobile
+	width: 100%
+	tbody
+		tr td
+			border: 1px solid $negro
+			padding: 5px 10px
+			box-sizing: border-box
+			font-size: 13px
+			font-family: $font__003
+			color: $negro
+			height: 35px
+			text-align: center
+			width: 60%
+			&:first-child
+				width: 40%
+				background: #CBCBCB
+	tfoot
+		th
+			border: 1px solid $negro
+			padding: 5px 10px
+			box-sizing: border-box
+			font-size: 13px
+			font-family: $font__003
+			color: $negro
+			height: 35px
+			text-align: center
+			width: 60%
+			&:first-child
+				width: 40%
+
+.table__g__price__item
+	max-width: 300px
+	margin: auto
+	width: 100%
+	text-align: right
+	margin-bottom: 25px
+	h3
+		font-family: $font__003
+		font-size: 13px
+		color: $color__001
+		text-align: left
+	.g__button
+		width: 60%
+		span, input
+			font-size: 11px
+			padding: 5px 10px
+.popup__content__room__more--text
+	font-family: $font__006
+@media screen and (max-width: 767px)
+	.pop__up__y
+		height: calc(100% - 30px)
+
+	.pop__up__y__nav
+		display: none
+
+	.pop__up__y__mobile__title
+		display: flex
+
+	.pop__up__y__content__in
+		padding: 0
+		height: 100%
+
+	.pop__up__y__content__scroll
+		overflow: hidden
+
+	.pop__up__y__content__in__under
+		height: calc(100% - 46px)
+		padding: 30px 15px
+		box-sizing: border-box
+
+	.pop__up__y__content__in__under__scroll
+		overflow: auto
+		height: 100%
+		padding-right: 15px
+		box-sizing: border-box
+
+	.table__g__price__desktop
+		display: none
+
+	.table__g__price__mobile
+		display: block
+		.g__button
+			margin-top: 15px
+
+//pop up booking
+.pop__up__y__book
+	.pop__up__y__book__in
+		padding: 40px
+
+
+.pop__up__y__book__in
+	padding: 40px
+	box-sizing: border-box
+	height: 100%
+
+.pop__up__y__book__scroll
+	overflow: auto
+	height: 100%
+	padding-right: 20px
+	box-sizing: border-box
+
+.pop__up__y__form__book
+	display: flex
+	flex-wrap: wrap
+
+.pop__up__y__form__book__title
+	text-align: center
+	padding-bottom: 20px
+	margin-bottom: 30px
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		background: $color__gradient
+		height: 1px
+		width: 100%
+	h3
+		font-size: 20px
+		font-family: $font__003
+		color: $color__001
+		text-transform: uppercase
+		display: -o-flex
+		flex-wrap: wrap
+		display: flex
+		justify-content: center
+		margin: 0
+		line-height: 1.2
+		p
+			margin: 0
+		i
+			font-style: normal
+			font-family: $font__003
+
+.pop__up__y__form__book__l
+	width: 30%
+	padding-right: 20px
+	box-sizing: border-box
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		right: 0
+		width: 1px
+		height: 100%
+		background: -webkit-gradient(linear, right bottom, left top, from(#6d9f95), color-stop(38%, #6d9f5d), color-stop(69%, #ff9f17), to(#ff4717))
+	> p
+		font-size: 14px
+		font-family: $font__006
+		color: $color__001
+		line-height: 1.3
+	.input__g__text
+		font-family: $font__003
+
+.pop__up__y__form__book__r
+	.input__g 
+		.input__g__input
+			font-family: $font__001
+		.input__g__input::-webkit-input-placeholder
+			font-family: $font__001
+			
+		.input__g__input::-moz-placeholder
+			font-family: $font__001
+			
+		.input__g__input:-ms-input-placeholder
+			font-family: $font__001
+			
+		.input__g__input::-moz-placeholder
+			font-family: $font__001
+
+
+.pop__up__y__form__book__r
+	width: 70%
+	padding-left: 20px
+	box-sizing: border-box
+	.g__button
+		min-width: auto
+
+.pop__up__y__form__book__radios
+	article
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+
+.pop__up__y__form__book__dates
+	margin-top: 20px
+	input[type=date]::-webkit-inner-spin-button
+		-webkit-appearance: none
+		display: none
+	h3
+		font-family: $font__006
+		font-size: 15px
+		color: $color__001
+		margin: 0
+		margin-bottom: 15px
+	.input__g
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+	.input__g .input__g__input
+		background: $blanco
+		color: $color__001
+		font-size: 12px
+		border: 1px solid $color__001
+		padding-right: 0
+		font-family: $font__006
+		appearance: none
+
+.pop__up__y__form__book__people
+	margin-top: 20px
+	h3
+		font-family: $font__001
+		font-size: 15px
+		color: $color__001
+		margin: 0
+		margin-bottom: 15px
+	.input__g
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+	.input__g .input__g__input
+		background: $blanco
+		color: $color__001
+		font-size: 14px
+		border: 1px solid $color__001
+		font-family: $font__006
+		&::placeholder
+			font-family: $font__006
+.parraf__input__modal
+	font-size: 12px
+	margin: 0 0 6px 0
+.pop__up__y__form__book__in .input__g
+	.input__g__input::-webkit-input-placeholder
+		text-transform: inherit
+	.input__g__input::-moz-placeholder
+		text-transform: inherit
+	.input__g__input:-ms-input-placeholder
+		text-transform: inherit
+	.input__g__input::-moz-placeholder
+		text-transform: inherit
+@media screen and (max-width: 767px)
+	.ctn__items__gnral__wrap__sec
+		.g__item__one figcaption section span
+			display: none !important
+
+	.popupicon-on
+		display: block
+		right: 20px
+
+	.popupicon-up
+		display: none
+
+	.pop__up__y__form__book
+		padding: 20px
+		box-sizing: border-box
+
+	.pop__up__y__book .pop__up__y__book__in
+		padding: 0
+
+	.pop__up__y__book__scroll
+		padding-right: 0
+		position: relative
+
+	.pop__up__y__form__book__title
+		padding: 15px
+		margin-bottom: 0
+		h3
+			font-size: 12px
+			max-width: 300px
+			width: 100%
+			margin: auto
+
+	.pop__up__y__form__book__radios
+		display: flex
+		flex-wrap: wrap
+		position: relative
+		article
+			width: 48%
+			margin: 0 0 15px 0 !important
+		.wpcf7-form-control-wrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+		&:before
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			background: $color__gradient
+			height: 1px
+			width: 100%
+
+	.pop__up__y__form__book__l
+		width: 100%
+		padding: 0
+		&:before
+			display: none
+
+	.pop__up__y__form__book__in
+		display: flex
+		justify-content: space-between
+		.input__g
+			width: 48%
+			margin-right: 4%
+			&:last-child
+				margin-right: 0
+
+	.pop__up__y__form__book__r
+		width: 100%
+		padding: 0
+
+	.pop__up__y__form__book__dates
+		position: relative
+		padding-bottom: 7px
+		&:before
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			background: $color__gradient
+			height: 1px
+			width: 100%
+		h3
+			font-size: 10px
+		.input__g__input
+			font-size: 10px
+
+
+	.pop__up__y__form__book__people
+		position: relative
+		padding-bottom: 6px
+		&:before
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			background: $color__gradient
+			height: 1px
+			width: 100%
+		h3
+			font-size: 10px
+		.input__g .input__g__input
+			font-size: 12px
+			&::placeholder
+				font-size: 12px
+
+
+	.pop__up__y__form__book__r
+		padding-top: 17px
+@media screen and (max-width: 370px)
+	.pop__up__y__form__book__dates 
+		padding-bottom: 15px
+		.pop__up__y__form__book__in 
+			flex-wrap: wrap
+			.input__g
+				width: 100%
+				margin-right: 0
+
+//pop up thanks
+.pop__up__y__thanks
+	.pop__up__y
+		padding: 50px 20px
+		box-sizing: border-box
+	.pop__up__y__container
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		figure
+			max-width: 200px
+			width: 100%
+			margin: 0
+			img
+				max-width: 100%
+				margin: auto
+				width: 100%
+	.pop__up__y__text
+		padding-top: 80px
+		h3
+			font-family: $font__003
+			font-size: 18px
+			color: $color__001
+			margin: 0
+			margin-bottom: 10px
+		p
+			font-family: $font__001
+			font-size: 14px
+			color: $color__001
+			margin: 0

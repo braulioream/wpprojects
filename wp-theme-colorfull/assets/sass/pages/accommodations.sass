@@ -1,0 +1,28 @@
+.search_results--box
+	width: 100%
+	display: block
+	text-align: center
+	margin: 0 0 25px 0
+	a
+		margin: 10px 0 0 0
+		display: inline-block
+		padding: 10px
+		border: 1px solid $negro
+		text-transform: uppercase
+		font-size: 14px
+		color: $negro
+		font-family: $font__003
+		margin: 0
+		position: relative
+		background: $blanco
+		cursor: pointer
+		&.active, &.activeTwo
+			//z-index: 9999
+		&.colors, &.colorsTwo
+			border-image: linear-gradient(to left, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+			border-width: 1px
+			border-image-slice: 1
+		&:hover
+			border-image: linear-gradient(to left, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+			border-width: 1px
+			border-image-slice: 1

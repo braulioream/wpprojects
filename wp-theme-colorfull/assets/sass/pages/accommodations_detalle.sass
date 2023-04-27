@@ -1,0 +1,291 @@
+.detail_y_top--acomodation
+	.detail_y__item
+		width: 19%
+	.detail_y_triptype
+		width: 43%
+		.detail_y__item__inside
+			padding: 0 10px
+			box-sizing: border-box
+	.detail_y_links .g__button
+		height: auto
+		span, input
+			padding: 5px 25px
+			font-size: 13px
+.container__single__accomodattion
+	max-width: 1234px
+@media screen and (max-width: 1024px)
+	.detail_y__items:before
+		display: none
+	
+	.detail_y_top--acomodation .detail_y__item
+		width: 33.33%
+
+@media screen and (max-width: 767px)
+	.detail_y_top--acomodation
+		.detail_y_links .g__button
+			height: auto
+			span, input
+				padding: 10px 5px
+				font-size: 10px
+
+@media screen and (max-width: 360px)
+	.detail_y_top--acomodation
+		.detail_y_links .g__button
+			height: auto
+			span, input
+				padding: 10px 5px
+				font-size: 9px
+
+.detail_y_info--acomodation
+	.title__general__title h3
+		text-transform: uppercase
+	&.detail_y_info .book_now
+		min-width: 170px
+
+@media screen and (max-width: 767px)
+	.detail_y_info--acomodation
+		&.detail_y_info .book_now
+			min-width: auto
+			span
+				padding: 10px 10px
+
+
+//pop up room
+.pop__up__y__content__room
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	padding: 12px 0
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 1px
+		background: $color__gradient
+		z-index: 3
+	&:last-child
+		&:before
+			display: none
+
+.popup__content__room__slider
+	width: 26%
+	margin-right: 3%
+	ul
+		margin: 0
+		padding: 0
+	li
+		list-style: none
+		margin: 0
+		figure
+			margin: 0
+			background-size: cover
+			background-position: center center
+			background-repeat: no-repeat
+			width: 100%
+			height: 125px
+			background-color: $color__001
+	.slick-prev, .slick-next
+		position: absolute
+		border: none
+		padding: 0
+		top: 50%
+		margin-top: -20px
+		height: 40px
+		width: 30px
+		background: transparent
+		text-align: center
+		pointer-events: auto
+		font-size: 0
+		z-index: 1200
+		cursor: pointer
+		transition: all .25s ease-in-out
+		&:hover
+			opacity: .7
+		&:before
+			font-family: 'icomoon'
+			font-size: 15px
+			color: white
+			line-height: 40px
+	.slick-prev
+		left: 0
+		&:before
+			content: "\e90b"
+	.slick-next
+		right: 0
+		&:before
+			content: "\e90a"
+
+.popup__content__room__info
+	width: 46%
+	margin-right: 3%
+	position: relative
+	top: 0
+	h3
+		font-family: $font__003
+		color: $color__001
+		margin: 0
+		font-size: 15px
+		margin-bottom: 15px
+		i
+			font-style: normal
+
+.popup__content__room__content
+	text-align: right
+	> a
+		display: inline-block
+		color: $color__003
+		font-family: $font__001
+		font-size: 13px
+		&:hover
+			text-decoration: underline
+
+.pop__up--more
+	display: block
+	text-align: right
+	color: $color__003 !important
+	font-family: $font__001
+	font-size: 13px
+	&:hover
+		text-decoration: underline
+
+.popup__content__room__btnprice
+	width: 22%
+	text-align: center
+	padding-top: 33px
+	box-sizing: border-box
+	h3
+		font-size: 12px
+		font-family: $font__003
+		color: $color__001
+		margin: 0
+		display: none
+		line-height: 1.2
+	.g__button
+		min-width: auto
+		span, input
+			padding: 5px 20px
+@media screen and (min-width: 767px)
+	.popup__content__room__btnprice
+		.book_now:hover
+			background: $color__gradient
+
+.popup__content__room__price
+	margin-top: 10px
+	> a
+		font-family: $font__001
+		font-size: 14px
+		color: $color__001
+		
+@media screen and (max-width: 767px)
+	.popup__content__room__info
+		order: 3
+		width: 100%
+		margin-right: 0
+		margin-top: 20px
+
+	.popup__content__room__slider
+		width: 50%
+		margin-right: 0
+
+	.popup__content__room__btnprice
+		width: 50%
+		padding-left: 15px
+		box-sizing: border-box
+		display: flex
+		flex-direction: column
+
+	.popup__content__room__btnprice
+		.g__button
+			order: 2
+		h3
+			display: block
+
+	.popup__content__room__price
+		order: 1
+		margin-bottom: 15px
+		font-size: 12px
+		br
+			display: none
+
+	.popup__content__room__info h3
+		display: none
+
+
+
+//acommodation top ranked
+.detail_y__acommodations
+	padding: 0 0 60px 0
+
+.detail_y__acommodations__title
+	margin-bottom: 30px
+
+.detail_y__acommodations__items
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+.detail_y__acommodations__item
+	width: 175px
+	margin: 0
+	margin-right: 12px
+	margin-left: 12px
+	margin-bottom: 15px
+	&:nth-child(6n+6)
+		/*margin-right: 0*/
+
+@media screen and (max-width: 1024px)
+	.detail_y__acommodations__item
+		width: 31%
+		margin-right: 1%
+		&:nth-child(3n+3)
+			margin-right: 0 !important
+
+@media screen and (max-width: 767px)
+	.detail_y__acommodations__item
+		width: 48%
+		margin-right: 2% !important
+		&:nth-child(3n+3)
+			margin-right: 2% !important
+		&:nth-child(2n+2)
+			margin-right: 0 !important
+	.detail_y__acommodations
+		padding-bottom: 25px
+
+@media screen and (max-width: 480px)
+	.detail_y__acommodations__item
+		width: 43%
+
+@media screen and (max-width: 375px)
+	.detail_y__acommodations__item
+		width: 47%
+		margin-right: 1% !important
+		margin-left: 1% !important
+
+/* FIX GOOGLE MAPS (ancho) */
+
+.pop__up__y__content__in.Map
+	iframe
+		height: 100%
+		position: absolute
+	p
+		padding: 0
+		margin: 0
+	.pop__up__y__content__in__under 
+		padding: 0
+		.pop__up__y__content__in__under__scroll
+			padding-right: 0px
+
+@media screen and (max-width: 767px)
+	.pop__up__y__content__in.Map
+		iframe
+			height: 100%
+			position: absolute
+		p
+			padding: 0
+			margin: 0
+		.pop__up__y__content__in__under 
+			padding: 0
+			.pop__up__y__content__in__under__scroll
+				padding-right: 0px

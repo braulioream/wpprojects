@@ -1,0 +1,202 @@
+.banner__post
+	height: 100%
+	display: block
+	width: 100%
+	position: relative
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	display: flex
+	align-items: center
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $color__gradient
+		opacity: 0.25
+.banner__post__ctn
+	z-index: 2
+	text-align: center
+	h1
+		font-size: 25px
+		font-family: $font__003
+		color: $blanco
+		text-transform: uppercase
+		margin: 0
+		width: 100%
+.post__wrap
+	width: 100%
+	padding: 30px 0
+	box-sizing: border-box
+.post__header
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	font-family: $font__006
+	font-size: 15px
+	h3
+		margin: 0 0 3px 0
+		font-size: 15px
+		font-family: $font__006
+.post__header__info, .post__header__share
+	width: 47.5%
+.post__header__info
+	h3
+		margin-bottom: 1px
+		color: $color__003
+		text-transform: uppercase
+	p 
+		margin: 0
+.post__header__share
+	text-align: right
+	ul
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-end
+	li
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
+.post__wrap__ctn
+	width: 100%
+	padding-top: 35px
+	box-sizing: border-box
+.post__related
+	width: 100%
+	padding: 0 0 65px 0
+	box-sizing: border-box
+.post__related__ctn
+	max-width: 1210px
+	padding-top: 55px
+	box-sizing: border-box
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		width: 95%
+		max-width: 975px
+		margin: 0 auto
+		height: 10px
+		background: $color__gradient
+	.title__general__title, .title__general__button
+		text-align: center
+.post__related__tags
+	padding-top: 25px
+	box-sizing: border-box
+	nav
+		display: flex
+		flex-wrap: wrap
+		a
+			width: calc(33.3333% - 20px)
+			margin: 0 30px 0 0
+			&:nth-child(3n+3)
+				margin-right: 0
+.post__related__suggested
+	padding-top: 65px
+	box-sizing: border-box
+.post__related__suggested__cn
+	padding-top: 30px
+	box-sizing: border-box
+	nav
+		display: flex
+		flex-wrap: wrap
+		a
+			width: calc(25% - 22px)
+			margin: 0 29px 0 0
+			&:nth-child(4n+4)
+				margin-right: 0
+@media screen and (max-width: 1024px)
+	.post__related
+		padding-bottom: 50px
+	.post__related__ctn
+		padding-top: 50px
+	.post__related__suggested
+		padding-top: 50px
+	.post__related__tags
+		nav
+			a
+				width: calc(33.3333% - 10px)
+				margin-right: 15px
+	.post__related__suggested__cn
+		nav
+			a
+				width: calc(25% - 12px)
+				margin: 0 15px 0 0
+@media screen and (max-width: 960px)
+	.post__related__suggested__cn
+		nav
+			a
+				width: calc(33% - 8px)
+				margin-bottom: 15px
+				&:nth-child(4n+4)
+					margin-right: 15px
+				&:nth-child(3n+3)
+					margin-right: 0
+				&:last-child
+					margin-bottom: 0
+@media screen and (max-width: 767px)
+	.banner__post__ctn
+		h1
+			font-size: 20px
+	.post__related
+		padding-bottom: 40px
+	.post__related__ctn
+		padding-top: 40px
+	.post__related__suggested
+		padding-top: 40px
+	.post__related__tags
+		nav
+			a
+				width: calc(50% - 8px)
+				margin-bottom: 15px
+				&:nth-child(4n+4) 
+					margin-right: 0
+				&:nth-child(3n+3) 
+					margin-right: 15px
+				&:nth-child(even)
+					margin-right: 0
+				&:last-child
+					margin-bottom: 0
+	.post__related__suggested__cn
+		nav
+			a
+				width: calc(50% - 8px)
+				max-width: calc(50% - 8px) !important
+				&:nth-child(3n+3) 
+					margin-right: 15px
+				&:nth-child(even)
+					margin-right: 0
+@media screen and (max-width: 480px)
+	.post__related__tags
+		nav
+			a
+				width: 100%
+				max-width: 100% !important
+				margin-right: 0 !important
+
+	.post__related__suggested__cn
+		.g__item__one figcaption section
+			transform: translateY(0)
+
+	.post__related__ctn
+		padding-left: 0
+		padding-right: 0
+
+@media screen and (max-width: 360px)
+	.post__related__suggested__cn
+		nav
+			a
+				width: 100%
+				max-width: 100% !important
+				margin-right: 0 !important
+
+.no_display
+	&.wp-post-image
+		display: none
+

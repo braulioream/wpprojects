@@ -1,0 +1,294 @@
+.g__item__one
+	position: relative
+	display: block
+	@media screen and (min-width: 1025px)
+		figcaption
+			section
+				transform: translateY(50%)
+				span
+					opacity: 0
+		&:hover
+			figure
+				> span
+					border-image: $color__gradient
+					background: rgba(0, 147, 128, 0.6)
+				&:before
+					opacity: 0
+			figcaption
+				section
+					transform: translateY(0%)
+					h3
+						font-size: 16px
+					span
+						opacity: 1
+						font-size: 16px
+	figure
+		height: 270px
+		width: 100%
+		background-position: center center
+		background-size: cover
+		background-repeat: no-repeat
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: $negro
+			opacity: .25
+			transition: all .2s
+		> span
+			background: 0 0
+			border: 2px solid transparent
+			background: transparent
+			color: #fff
+			font-weight: 700
+			width: 100%
+			display: block 
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			width: calc(100% - 15px)
+			height: calc(100% - 15px)
+			left: 0
+			border-width: 2px
+			border-image-slice: 1
+			text-decoration: none
+			transition: all .2s
+	figcaption
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		z-index: 5
+		padding: 20px
+		box-sizing: border-box
+		section
+			max-width: 180px
+			margin: auto
+			width: 100%
+			text-align: center
+			transition: all .2s
+			h3
+				font-size: 15px
+				font-family: $font__003
+				color: $blanco
+				margin: 0
+				text-transform: uppercase
+				line-height: 1.2
+			span
+				display: block
+				margin-top: 15px
+				font-size: 15px
+				font-family: $font__001
+				color: $blanco
+				transition: all .2s
+				&:nth-child(2)
+					margin-top: 2px
+
+@media screen and (max-width: 767px)	
+	.g__item__one
+		figure
+			height: 200px
+		figcaption
+			section
+				h3
+					font-size: 13px
+				span
+					font-size: 12px
+					margin-top: 2px
+				span:nth-child(3)
+					display: none
+
+.g__item__two
+	position: relative
+	display: block
+	padding: 2px
+	transition: all .2s
+	&:hover
+		> span
+			opacity: 1
+			visibility: visible
+	.g__item__two__inside
+		position: relative
+	figure
+		height: 220px
+		width: 100%
+		background-position: center center
+		background-size: cover
+		background-repeat: no-repeat
+		position: relative
+	> span
+		background: 0 0
+		background: $color__gradient
+		color: #fff
+		font-weight: 700
+		width: 100%
+		display: block 
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		left: 0
+		border-image-slice: 1
+		text-decoration: none
+		transition: all .2s
+		opacity: 0
+		visibility: hidden
+	figcaption
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: auto
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: center
+		z-index: 5
+		padding: 12px
+		box-sizing: border-box
+		background: rgba(0,0,0, 0.6)
+		section
+			max-width: 100%
+			margin: auto
+			width: 100%
+			text-align: left
+			transition: all .2s
+			h3
+				font-size: 15px
+				font-family: $font__003
+				color: $blanco
+				margin: 0
+				line-height: 18px
+			h4
+				display: block
+				margin: 2px 0
+				font-size: 12px
+				font-family: $font__001
+				color: $blanco
+				transition: all .2s
+				line-height: 1
+			p
+				font-size: 12px
+				font-family: $font__001
+				color: $blanco
+				margin: 0
+
+.g__item__three
+	position: relative
+	display: block
+	padding: 2px
+	transition: all .2s
+	&:hover
+		> span
+			opacity: 1
+			visibility: visible
+		figcaption
+			height: 100%
+			section
+				div
+					display: block
+
+	.g__item__two__inside
+		position: relative
+	figure
+		height: 240px
+		width: 100%
+		background-position: center center
+		background-size: cover
+		background-repeat: no-repeat
+		position: relative
+	> span
+		background: 0 0
+		background: $color__gradient
+		color: #fff
+		font-weight: 700
+		width: 100%
+		display: block 
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		width: 100%
+		height: 100%
+		left: 0
+		border-image-slice: 1
+		text-decoration: none
+		transition: all .2s
+		opacity: 0
+		visibility: hidden
+	figcaption
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 80px
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		align-items: center
+		z-index: 5
+		padding: 12px
+		box-sizing: border-box
+		background: rgba(0,0,0, 0.6)
+		transition: all .2s linear
+		section
+			max-width: 100%
+			margin: auto
+			width: 100%
+			text-align: left
+			transition: all .2s
+			h3
+				font-size: 15px
+				font-family: $font__003
+				color: $blanco
+				margin: 0
+			h4
+				display: block
+				margin: 0
+				margin-top: 4px
+				font-size: 12px
+				font-family: $font__001
+				color: $blanco
+				transition: all .2s
+			h5
+				display: block
+				margin: 0
+				margin-top: 4px
+				font-size: 10px
+				font-family: $font__001
+				color: $blanco
+				transition: all .2s
+			div
+				font-size: 12px
+				font-family: $font__001
+				color: $blanco
+				margin: 0
+				margin-top: 15px
+				display: none
+				padding-bottom: 10px
+				p
+					color: $blanco
+				p:last-child
+					margin-bottom: 0
+			> div
+				position: relative
+				&:before
+					content: ""
+					position: absolute
+					bottom: 9px
+					height: 1px
+					width: 35px
+					background: rgba(255,255,255,.6)
+				> span
+					color: $blanco
+					text-transform: uppercase

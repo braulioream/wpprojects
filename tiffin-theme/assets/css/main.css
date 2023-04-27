@@ -1,0 +1,1478 @@
+	body {
+	--red: #E91431;
+	--green: #19B552;
+	--blue: #3E4E6B;
+
+	overflow: visible !important;
+	/*overflow-x: visible !important;*/
+	/*overflow-y: visible !important;*/
+}
+
+/**[data-price="0"] {
+	display: none !important;
+}*/
+
+#header-outer,
+#top {
+	z-index: 1000 !important;
+}
+
+main {
+	min-height: 100vh;
+}
+
+section.tiffin__build {
+	/*height: 100vh;*/
+	/*background-color: gray;*/
+}
+
+main ul,
+section ul,
+.tiffin__section ul {
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+
+* {
+	box-sizing: border-box;
+
+	padding: 0;
+	margin: 0;
+
+	font-family: "Montserrat", sans-serif;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+._hidden {
+	display: none !important;
+}
+
+.tiffin__section {
+	width: 100%;
+}
+
+.tiffin__wrapper {
+	/*outline: 1px solid green;*/
+	padding-left: 20px;
+	padding-right: 20px;
+
+	width: 100%;
+	max-width: 1200px;
+
+	margin: 0 auto;
+}
+
+.tiffin__wrapper h1, 
+.tiffin__wrapper h2, 
+.tiffin__wrapper h3, 
+.tiffin__wrapper h4 {
+	padding-top: 0;
+	padding-bottom: 0;
+
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.tiffin__wrapper h2 {
+	font-size: 1.5em;
+}
+
+.tiffin__wrapper h3 {
+	font-size: 1.2em;
+}
+
+.tiffin__product .tiffin__wrapper {
+	display: flex;
+
+	justify-content: space-around;
+	height: 100%;
+}
+
+.tiffin__product {
+	/*background-color: black;*/
+
+	height: calc(100vh - 100px);
+
+	margin-top: 80px;
+}
+
+.tiffin__product * {
+	/*color: white;*/
+}
+
+.tiffin__product--desc h2 {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.23em;
+	text-transform: uppercase;
+
+	color: var(--red);
+}
+
+.tiffin__product--desc h1 {
+	font-weight: 900;
+	font-size: 55px;
+	line-height: 67px;
+	color: #333333;
+	font-style: italic;
+}
+
+.tiffin__product--desc p {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 36px;
+	color: #3E4E6B;
+
+	margin-top: 28px;
+	width: 100%;
+	max-width: 496px;
+}
+
+.btn a {
+	background: #FFFFFF;
+	border: 2px solid #E91431;
+	box-sizing: border-box;
+	border-radius: 50px;
+	padding: 10px 40px;
+}
+
+.btn--red a {
+	background-color: var(--red);
+}
+
+.btn--white a {
+	background-color: white;
+	border: 2px solid var(--red);
+}
+
+.btn a span {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.btn--red a span {
+	color: white;
+}
+
+.btn--white a i,
+.btn--white a span {
+	color: var(--red);
+}
+
+.tiffin__product--buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tiffin__build {
+	/*display: flex;*/
+}
+
+.tiffin__build--desc {
+	margin-top: 20px;
+}
+
+.tiffin__build--desc i {
+	color: white;
+	display: inline-block;
+}
+
+
+.tiffin__build--desc h2 {
+	display: inline-block;
+	line-height: 20px;
+	font-size: 18px;
+}
+
+.tiffin__build--desc div {
+	display: inline-flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-left: 5px;
+}
+
+.tiffin__build--desc li {
+	color: white;
+	font-size: 14px;
+}
+
+.tiffin__extra {
+	display: flex;
+
+	justify-content: center;
+}
+
+.tiffin__extra .tiffin__wrapper {
+	margin-left: 0;
+	margin-right: 0;
+
+	position: relative;
+}
+
+.tiffin__build .tiffin__menu {
+	position: sticky;
+	width: 180px;
+	height: 465px;
+	border: 1px solid #E5EDEF;
+	border-radius: 10px;
+
+	top: 40px;
+	left: 0;
+
+	padding: 20px;
+}
+
+.tiffin__menu ul,
+.tiffin__menu li {
+	list-style: none;
+}
+
+.tiffin__menu li {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.tiffin__menu .menu-item a {
+	color: #9FAAB7;
+
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.tiffin__menu .current-menu-item::before {
+	content: "";
+	height: 23px;
+	width: 2px;
+	background-color: var(--red);
+	display: inline-block;
+	transform: translate(-21px,5px);
+}
+
+.tiffin__menu .current-menu-item >a {
+	color: var(--red);
+}
+
+.tiffin__build--header {
+	z-index: 999999;
+	width: 240px;
+	position: sticky;
+	top: 0;
+	right: 0;
+
+	background-color: var(--red);
+
+	height: 100vh;
+	/*z-index: 10;*/
+	transition: 0.5s all ease-in-out;
+}
+
+.tiffin__build--header.closed {
+	transform: translateX(240px);
+}
+
+
+.tiffin__build--header h2,
+.tiffin__build--header span {
+	color: white;
+}
+
+.tiffin__build--header .tiffin__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	height: 100%;
+	padding-top: 30px;
+}
+
+@media all and (max-width: 1000px) {
+	.tiffin__build--header .tiffin__wrapper {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.tiffin__build--addtoorder {
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
+}
+
+.tiffin__build--addtoorder .btn {
+	padding: 0 !important;
+}
+
+.tiffin__product--price {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tiffin__product--price label {
+	font-size: 12px;
+	color: white;
+}
+
+.tiffin__product--price span {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.tiffin__product--price span {
+	color: #333333;
+}
+
+#added_tiffin__product--price span {
+	color: white;
+}
+
+#ondemand_addtocart a {
+	background: #FFFFFF;
+	border: 2px solid #E91431;
+	box-sizing: border-box;
+	border-radius: 50px;
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 9px 33px;
+}
+
+#ondemand_addtocart span {
+	color: var(--red);
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+
+
+.tiffin__build--loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background-color: rgba(255, 255, 255, 0.5);
+
+	top: 0;
+	left: 0;
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+	overflow: hidden;
+}
+
+.tiffin__build--loading.active {
+	display: flex;
+}
+
+.lds-ellipsis {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-ellipsis div {
+	position: absolute;
+	top: 33px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: var(--red);
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.ondemand_addtocart .lds-ellipsis {
+	height: 0 !important;
+	transform: scale(0.5)  translateY(-15px);
+}
+
+#newtipform .lds-ellipsis,
+.amount .lds-ellipsis {
+	height: 0 !important;
+	transform: scale(0.5) translateY(-50px);
+}
+
+.ondemand_addtocart .lds-ellipsis div {
+	top: 0 !important;
+}
+
+.lds-ellipsis div:nth-child(1) {
+	left: 8px;
+	animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+	left: 8px;
+	animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+	left: 32px;
+	animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+	left: 56px;
+	animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes lds-ellipsis3 {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+@keyframes lds-ellipsis2 {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(24px, 0);
+	}
+}
+
+
+.tiffin__buildoptions {
+	/*outline: 1px solid orange;*/
+
+	display: flex;
+	flex-direction: column;
+}
+
+.tiffin__buildoptions--header {
+	position: sticky;
+
+	top: 40px;
+	left: 0;
+	order: 0;
+
+	z-index: 100;
+}
+
+.tiffin__buildoptions--header ul {
+	list-style: none;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	height: 60px;
+	background-color: white;
+	border: 1px solid #E5EDEF;
+	border-radius: 10px;
+
+	margin: 0;
+}
+
+.tiffin__buildoptions--header ul li {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+	list-style: none;
+
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 60px;
+}
+
+.tiffin__buildoptions--header ul li:hover {
+	opacity: 0.8;
+}
+
+.tiffin__buildoptions--section {
+	padding: 20px;
+	order: 5;
+}
+
+.tiffin__buildoptions--section >.tiffin__title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tiffin__buildoptions--section .food_categories {
+	display: flex;
+}
+
+.food_categories .img_wrapper {
+	border-radius: 49px;
+	width: 25px;
+	height: 25px;
+	object-fit: cover;
+	margin-right: 5px;
+
+	border: 2px solid #BBC8CB;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.food_categories div {
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+}
+
+.food_categories--option {
+	cursor: pointer;
+}
+
+.food_categories--option:hover span:before,
+.food_categories--option:hover * {
+	color: var(--red);
+}
+
+.food_categories--option:hover .img_wrapper {
+	border: 2px solid var(--red);
+}
+
+.food_categories--option.active span:before,
+.food_categories--option.active * {
+	color: var(--red);
+}
+
+.food_categories--option.active .img_wrapper {
+	border: 2px solid var(--red);
+}
+
+.food_categories span {
+	color: #BBC8CB;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.tiffin__buildoptions--section h2 {
+	font-weight: 900;
+	font-style: italic;
+	font-size: 35px;
+	line-height: 43px;
+	color: #333333;
+}
+
+.tiffin__buildoptions--section >ul {
+	margin-top: 25px;
+	list-style: none;
+	display: grid;
+	gap: 20px;
+	padding-top: 10px;
+	grid-template-columns: repeat(5, 200px);
+}
+
+@media all and (max-width: 1100px) {
+	.tiffin__buildoptions--section >ul {
+		grid-template-columns: repeat(4, 250px);
+	}
+}
+
+@media all and (max-width: 890px) {
+	.tiffin__buildoptions--section >ul {
+		grid-template-columns: repeat(3, 333px);
+	}
+}
+
+@media all and (max-width: 500px) {
+	.tiffin__buildoptions--section >ul {
+		grid-template-columns: repeat(2, 50%);
+	}
+}
+
+.tiffin__buildoptions--section li {
+	list-style: none;
+	width: 180px;
+	height: 333px;
+	border-radius: 10px;
+
+	border: 1px solid #DEDEDE;
+	/*overflow: hidden;*/
+
+	cursor: pointer;
+}
+
+.tiffin__buildoptions--section li .btn {
+	margin-top: 15px;
+}
+
+.tiffin__buildoptions--section li .btn a {
+	padding: 10px 15px;
+}
+
+.tiffin__buildoptions--section li.selected {
+	border: 1px solid var(--red);
+}
+
+.tiffin__buildoptions--section li.selected .tiffin__figure--hover {
+	background-color: rgba(159, 6, 27, 0.6);
+}
+
+.tiffin__buildoptions--section li.selected figcaption h3 {
+	color: var(--red);
+}
+
+.tiffin__buildoptions--section li figure:hover {
+	background-color: rgba(0,0,0,0.05);
+}
+
+.tiffin__buildoptions--section figure {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.tiffin__buildoptions--section figure .tiffin__buildoptions__figure--wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 190px;
+
+	z-index: 0;
+	border-radius: 10px 10px 200px 200px;
+	overflow: hidden;
+}
+
+.tiffin__buildoptions--section figure img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tiffin__figure--hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: 0.25s ease-in-out;
+
+	text-align: center;
+	padding: 13px;
+}
+
+.tiffin__buildoptions--section .tiffin__figure--hover .indicator--calory {
+	color: white;
+	font-size: 12px;
+
+	width: 67px;
+	height: 25px;
+
+	display: inline-block;
+	border-radius: 50px;
+	border: 2px solid white;
+}
+
+.food_category_indicator {
+	display: flex;
+	justify-content: center;
+}
+
+.food_category_indicator .img_wrapper {
+	border-radius: 49px;
+	width: 25px;
+	height: 25px;
+	object-fit: cover;
+	margin: 0 5px;
+
+	border: 2px solid white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.food_category_indicator .img_wrapper img {
+	width: auto !important;
+	height: auto !important;
+}
+
+.tiffin__buildoptions--section figcaption {
+	margin: 0;
+	padding-left: 10px;
+
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.tiffin__buildoptions--section figcaption h3 {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 17px;
+	text-align: center;
+	width: 100%;
+	max-width: 160px;
+}
+
+.tiffin__buildoptions--section figcaption p {
+	font-style: normal;
+	font-size: 10px;
+	line-height: 16px;
+	color: var(--blue);
+
+	text-align: center;
+
+
+	padding-bottom: 0;
+	/*padding-left: 5px;*/
+	/*padding-right: 5px;*/
+}
+
+
+.tiffin__buildoptions--section figcaption span {
+	/*display: block;*/
+}
+
+.tiffin__buildoptions--section figcaption .indicator--price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	width: 150px;
+	height: 30px;
+
+	color: white;
+	font-style: "SemiBold";
+	font-size: 14px;
+
+	border-radius: 50px;
+
+	background-color: var(--red);
+}
+
+
+.tiffin__buildoptions--section figcaption .indicator--price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	width: 150px;
+	height: 30px;
+
+	color: white;
+	font-style: "SemiBold";
+	font-size: 14px;
+
+	border-radius: 50px;
+
+	background-color: var(--red);
+	transition: 0.25s all ease-in-out;
+}
+
+.tiffin__buildoptions--section li:hover figcaption .indicator--price {
+	background-color: white;
+	border: 1px solid var(--red);
+}
+
+.tiffin__buildoptions--section li:hover figcaption .indicator--price * {
+	color: var(--red) !important;
+}
+
+.tiffin__buildoptions--section figcaption .indicator--price p {
+	display: none;
+	padding: 0;
+	font-size: 14px;	
+	font-weight: 600;
+}
+
+.tiffin__buildoptions--section li:hover figcaption .indicator--price p {
+	display: block;
+}
+
+.tiffin__buildoptions--section li:hover figcaption .indicator--price span {
+	display: none;
+}
+
+/* Check-out */
+
+.argmc-wrapper .argmc-tabs-list {
+	display: flex;
+	justify-content: center;
+}
+
+.tiffin__checkout--steps .shop_table {
+	display: none;
+}
+
+.tiffin__checkout--title h1 {
+	font-size: 35px;
+}
+
+.tiffin__checkout--title h1 {
+	font-size: 35px;
+}
+
+.tiffin__checkout {
+	background-color: white;
+	width: 100%;
+}
+
+.tiffin__checkout .tiffin__wrapper {
+	display: flex;
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@media all and (max-width: 720px) {
+	.tiffin__checkout .tiffin__wrapper {
+		flex-direction: column;
+	}
+}
+
+.tiffin__checkout--steps {
+	width: 55%;
+}
+
+
+.tiffin__checkout--order_review {
+	width: 45%;
+	background-color: #FCF7F7;
+
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.wmc-product-img {
+	width: 80px;
+	height: 80px;
+}
+
+.tiffin__cart--itemrow .product-name {
+	display: flex;
+}
+
+.product-name p span,
+.wmc-product-desc p span {
+	display: block;
+}
+
+.order__tip {
+	transform: translateY(35px);
+}
+
+.order__tip--wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.order__tip--values {
+	display: grid;
+	gap: 20px;
+	padding-top: 10px;
+	grid-template-columns: repeat(3, 40px);
+}
+
+.order__tip--values span {
+	border: 2px solid var(--red);
+	border-radius: 50px;
+	color: var(--red);
+	text-align: center;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+}
+
+.order__tip--values span.selected {
+	border: 2px solid var(--red);
+	background-color: var(--red);
+	color: white;
+}
+
+.order__customtip {
+	transform: translateX(50px);
+}
+
+.fee .amount {
+	color: var(--red);
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* Header */
+
+#tiffin__header {
+}
+
+.tiffin__wrapper--mini {
+	display: flex;
+	height: 100%;
+}
+
+.tiffin__header--item,
+.tiffin__header--item a {
+	/*outline: 1px solid red;*/
+	width: 140px;
+
+	display: flex;
+	align-items: center;
+}
+
+.tiffin__header--inneritem	{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	padding-left: 10px;
+}
+
+.header--icon {
+	line-height: 16px;
+}
+
+.tiffin__header--inneritem span {
+	line-height: 10px;
+}
+
+.tiffin__header--inneritem p {
+	padding-bottom: 0;
+	line-height: 16px;
+}
+
+.tiffin__header--submenu {
+	display: none;
+}
+
+.header--icon svg {
+	width: 25px;
+	height: 25px;
+}
+
+/* Footer */
+
+.footer__contact--form {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__contact--form .your-email {
+	background-color: #434750;
+	width: 248px;
+	height: 50px;
+}
+
+.footer__contact--form .your-email::placeholder {
+	color: #919191;
+}
+
+.footer__contact--form .wpcf7-submit {
+	height: 50px;
+	text-transform: uppercase;
+}
+
+
+.tiffin__modal {
+	width: 650px;
+	height: 640px;
+
+	background-color: white;
+
+	margin: 0 auto;
+}
+
+.tiffin__modal * {
+	font-family: "Montserrat";
+}
+
+.tiffin__modal .tiffin__innerwrapper {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.tiffin__modal--header {
+	width: 650px;
+	height: 220px;
+
+	border-radius: 0px 0px 10px 10px;
+
+	display: flex;
+	justify-content: space-between;
+
+	/*background-image: url("../images/modal_header.png");*/
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.tiffin__modal--header .extra {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.tiffin__modal--header .extra h2 {
+	display: inline-block;
+}
+
+.tiffin__build__close {
+	/*padding: 10px;*/
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.tiffin__modal--blackback {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	z-index: 1;
+}
+
+.tiffin__modal--header .tiffin__modal--text {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	margin-left: 50px;
+	margin-right: 50px;
+	z-index: 100;
+}
+
+.tiffin__modal--header .tiffin__modal--text h2 {
+	color: white;
+	font-size: 55px;
+	font-style: italic;
+	font-weight: 900;
+}
+
+.tiffin__modal--header .tiffin__modal--text h3 {
+	color: var(--red);
+
+	font-size: 20px;
+	letter-spacing: 0.23em;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.tiffin__modal--close {
+	width: 29px;
+	height: 100%;
+}
+
+
+.tiffin__modal--lists {
+	padding: 0 10px;
+	margin: 0 10px;
+	height: 270px;
+
+	/*overflow: hidden;*/
+}
+
+.tiffin__modal__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.tiffin__modal__item--name {
+	width: 423px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 17px;
+}
+
+.tiffin__modal__item--price {
+	line-height: 10px;
+}
+
+.tiffin__modal__item--price::before {
+	/*content: "+";*/
+}
+
+.tiffin__modal__qty {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 5px;
+	padding-right: 5px;
+
+	background: #F1F9FB;
+	border: 1px solid #9FAAB7;
+	border-radius: 50px;
+
+	width: 120px;
+	height: 25px;
+}
+
+.tiffin__modal--ctrl {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+
+	color: white;
+	line-height: 12px;
+	font-size: 21px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.tiffin__ctrl--minus {
+	background-color: var(--red);
+}
+
+.tiffin__ctrl--plus {
+	background-color: var(--green);
+}
+
+.tiffin__modal--option {
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+}
+
+.tiffin__modal--option .tiffin__ctrl--check {
+	display: flex;
+	align-items: center;
+}
+
+.tiffin__ctrl--check::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	display: inline-block;
+	border: 2px solid var(--red);
+	transition: 0.25s all ease-in-out;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+
+.tiffin__ctrl--check.selected::before {
+	border-width: 5px;
+}
+
+.tiffin__modal__options {
+	display: flex;
+	width: 120px;
+	padding-left: 5px;
+	padding-right: 5px;
+	justify-content: flex-end;
+}
+
+.tiffin__modal__qty--options {
+	list-style: none;
+	margin: 0;
+}
+
+.tiffin__modal__qty--options li {
+	list-style: none;
+	display: none;
+
+	font-size: 10px;
+}
+
+.tiffin__modal__qty--options li.selected {
+	display: inline-block;
+}
+
+.tiffin__modal--low-bar {
+	height: 80px;
+	background-color: var(--red);
+}
+
+.tiffin__modal__item {
+	/*outline: 1px solid red;*/
+}
+
+.tiffin__modal--low-bar {
+	display: flex;
+	padding: 0 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tiffin__modal--subtotal {
+	color: white;
+
+	display: flex;
+	align-items: center;
+}
+
+.tiffin__modal--subtotal span {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;	
+}
+
+.tiffin__modal--subtotal strong {
+	margin-left: 16px;
+}
+
+.tiffin__modal--subtotal strong span {
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.tiffin__modal--qty input {
+	padding-left: 12px;
+	text-align: center;
+	width: 64px;
+	height: 32px;
+
+	background: #F1F9FB;
+	border: 1px solid #9FAAB7;
+	border-radius: 50px;
+}
+
+/* Thank You Page */
+
+.thankyou {
+	width: 100%;
+	height: 100vh;
+	max-height: calc(100vh-100px);
+
+	background-size: cover;
+	background-position: center;
+
+	position: relative;
+}
+
+.tiffin__burntred {
+	width: 100%;
+	height: 100%;
+
+	background-color: var(--red);
+	mix-blend-mode: multiply;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.thankyou .tiffin__wrapper {
+	height: 100%;
+	position: relative;
+	z-index: 100;
+
+	max-width: 680px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.thankyou__text h1 {
+	font-family: Montserrat;
+	color: white;
+
+	font-style: italic;
+	font-weight: 900;
+	font-size: 80px;
+	text-align: center;
+	line-height:	82.7%;
+}
+
+.thankyou__text p {
+	font-family: Montserrat;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	color: white;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 36px;
+	text-align: center;
+}
+
+.thankyou__btns {
+	display: flex;
+	justify-content: center;
+}
+
+#tiffin__deliverymap {
+	max-width: 930px;
+	width: 100%;
+
+	height: 100%;
+	max-height: 900px;
+}
+
+.pac-container {
+	z-index: 10000;
+}
+
+.tiffin__deliverymap--wrapper {
+	display: flex;
+}
+
+@media all and (max-width: 720px) {
+	.tiffin__deliverymap--wrapper {
+		flex-direction: column;
+	}
+}
+
+.tiffin__deliverymap--data {
+	width: 330px;
+	height: 600px;
+}
+
+.tiffin__deliverymap--header {
+	height: 100px;
+	width: 100%;
+
+	background-color: var(--red);
+	display: flex;
+	align-items: center;
+
+	padding: 0 35px;
+}
+
+.devmap__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100%;
+}
+
+.tiffin__deliverymap--header h2 {
+	font-family: Montserrat;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+.tiffin__deliverymap--header h2.active {
+	color: black;
+}
+
+.tiffin__deliverymap--pickup {
+	padding: 35px;
+	display: none;
+}
+
+.tiffin__deliverymap--addresses {
+	padding: 35px;
+}
+
+.tiffin__deliverymap--addresses h3 {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.tiffin__deliverymap--map {
+	width: 600px;
+	height: 600px;
+	background-color: rgba(0,0,0,0.1);
+}
+
+#tiffin--deliverymap {
+	width: 100%;
+	height: 100%;
+}
+
+.tiffin--outer {
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.25);
+
+	z-index: 9999;
+
+	display: none;
+	justify-content: center;
+	align-items: center;	
+}
+
+.tiffin--outer * {
+	position: relative;
+	z-index: 100000;
+}
+
+.tiffin--outer.active {
+	display: flex;
+}
+
+#tiffin__saveaddress .tiffin__wrapper {
+	width: 300px;
+	height: 160px;
+
+	background-color: white;
+}
+
+#tiffin__saveaddress .btn {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+
+	height: 58px;
+}
+
+#tiffin__saveaddress .btn a {
+	display: flex;
+}
+
+.cart__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.form-row-last,
+.form-row-first {
+	width: 49%;
+	padding: 1px;
+	display: inline-block;
+}
+
+.schedule input {
+	border: 1px solid #E5EDEF !important;
+	background-color: white !important;
+	border-radius: 5px;
+	padding: 8px;
+}
+
+#schedule_field {
+	display: none;
+}

@@ -1,0 +1,579 @@
+.ctn__items__gnral
+	width: 100%
+	padding: 25px 0 0 0
+	box-sizing: border-box
+	overflow: hidden
+.ctn__items__gnral__wrap
+	max-width: 1210px
+	display: flex
+	flex-wrap: wrap
+.items__destination
+	.ctn__items__gnral__wrap
+		min-height: 600px
+.item__gnral
+	width: calc(25% - 22px)
+	margin: 0 22px 29px 0
+	&:nth-child(4n+4)
+		margin-right: 0
+.items__prin__accommodations
+	.item__gnral
+		width: calc(16.924% - 24px)
+		&:nth-child(4n+4)
+			margin-right: 29px
+		&:nth-child(6n+6)
+			margin-right: 0
+.items__prin__blog
+	.item__gnral
+		width: calc(33.33% - 20px)
+		&:nth-child(4n+4)
+			margin-right: 29px
+		&:nth-child(3n+3)
+			margin-right: 0	
+@media screen and (min-width: 1025px)
+	.item__gnral
+		&:nth-child(4n+1)
+			.g__item__one:hover
+				figure >span
+					background: rgba(255, 0, 0, 0.6)
+
+		&:nth-child(4n+2)
+			.g__item__one:hover
+				figure >span
+					background: rgba(255, 128, 0, 0.6)
+		&:nth-child(4n+3)
+			.g__item__one:hover
+				figure >span
+					background: rgba(151, 181, 0, 0.6)
+		&:nth-child(4n+4)
+			.g__item__one:hover
+				figure >span
+					background: rgba(0, 181, 141, 0.6)
+            		
+@media screen and (max-width: 1024px)
+	.item__gnral
+		width: calc(25% - 12px)
+		margin: 0 15px 15px 0
+	.items__prin__accommodations
+		.item__gnral
+			width: calc(16.6666% - 13px)
+			&:nth-child(4n+4)
+				margin-right: 15px
+	.items__prin__blog
+		.item__gnral
+			width: calc(33.6666% - 14px)
+			&:nth-child(4n+4)
+				margin-right: 15px
+	.ctn__items__gnral
+		padding-bottom: 10px
+@media screen and (max-width: 960px)
+	.item__gnral
+		width: calc(33% - 8px)
+		&:nth-child(4n+4)
+			margin-right: 15px
+		&:nth-child(3n+3)
+			margin-right: 0
+	.items__prin__accommodations
+		.item__gnral
+			width: calc(25% - 12px)
+			&:nth-child(3n+3)
+				margin-right: 15px
+			&:nth-child(4n+4)
+				margin-right: 0
+@media screen and (max-width: 767px)
+	.item__gnral
+		width: calc(50% - 8px)
+		&:nth-child(3n+3) 
+			margin-right: 15px
+		&:nth-child(even)
+			margin-right: 0
+	.items__prin__accommodations
+		.item__gnral
+			width: calc(50% - 8px)
+			&:nth-child(3n+3) 
+				margin-right: 15px
+			&:nth-child(even)
+				margin-right: 0
+	.items__prin__blog
+		.item__gnral
+			width: calc(50% - 8px)
+			&:nth-child(4n+4) 
+				margin-right: 0
+			&:nth-child(3n+3) 
+				margin-right: 15px
+			&:nth-child(even)
+				margin-right: 0
+@media screen and (max-width: 480px)
+	.item__gnral
+		width: 100%
+		margin-right: 0 !important
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+	.items__prin__accommodations
+		.item__gnral
+			width: 100%
+			height: auto
+			margin-right: 0 !important
+			&:last-child
+				margin-bottom: 0
+	.ctn__items__gnral
+		padding-bottom: 25px
+	.items__destination
+		.ctn__items__gnral__wrap
+			align-content: flex-start
+			min-height: 470px
+	.items__prin__blog
+		.item__gnral
+			width: 100% 	
+
+/*Filtros*/
+.ctn__filters
+	padding: 28px 0
+	width: 100%
+	box-sizing: border-box
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 1px
+		background:  $color__gradient
+.ctn__filters__wrap
+	max-width: 1040px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+.ctn__filters__items
+	//width: calc(100% - 300px)
+	display: flex
+	flex-wrap: wrap
+.filter__item
+	margin: 0 20px 0 0
+	position: relative
+	&:last-child
+		margin-right: 0
+	&.btnMap
+		.filter__item__parraf	
+			border-image: inherit
+			border-image-slice: inherit
+.filter__item__parraf	
+	padding: 10px
+	border: 1px solid $negro
+	text-transform: uppercase
+	font-size: 14px
+	color: $negro
+	font-family: $font__003
+	margin: 0
+	position: relative
+	background: $blanco
+	cursor: pointer
+	&.active, &.activeTwo
+		//z-index: 9999
+	&.colors, &.colorsTwo
+		border-image: linear-gradient(to left, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+		border-width: 1px
+		border-image-slice: 1
+
+.filter__item__ctn
+	position: absolute
+	top: calc(100% + 10px)
+	left: 0
+	width: 200px
+	max-height: 220px
+	overflow-y: scroll
+	background: $blanco
+	border-style: solid
+	border-image: linear-gradient(to left, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+	border-width: 1px
+	border-image-slice: 1
+	transition: all .3s ease-in-out
+	padding: 27px 27px 16px 27px
+	box-sizing: border-box
+	opacity: 0
+	visibility: hidden
+	z-index: -1
+	&.active
+		opacity: 1
+		z-index: 999999999999
+		visibility: visible
+.ctn__filters__search
+	//width: 275px
+	display: flex
+	justify-content: flex-end
+	.detail_y__item_link
+		margin: 0
+		text-align: center
+.btn__create
+	border: 1px solid $negro
+	padding: 10px
+	box-sizing: border-box
+	margin: 0
+	font-size: 11px
+	font-family: $font__002
+	transition: all .4s ease-in-out
+	background: $negro
+	color: $blanco
+.filter__form__ctn
+	width: 100%
+	h3
+		display: none
+		margin: 0
+		font-weight: normal
+		color: $negro
+		font-size: 14px
+		text-align: center
+		font-family: $font__003
+		text-transform: uppercase
+.filter__item__list
+	input
+		display: none
+		&:checked + label
+			&:after
+				opacity: 1
+	label
+		font-size: 14px
+		font-family: $font__003
+		color: $negro
+		text-transform: uppercase
+		position: relative
+		padding-right: 20px
+		box-sizing: border-box
+		width: 100%
+		display: block
+		&:before
+			content: ""
+			position: absolute
+			width: 12px
+			height: 12px
+			border: 1px solid $negro
+			top: 0
+			right: 0
+		&:after
+			content: "✓"
+			position: absolute
+			top: 2px
+			right: 3px
+			font-size: 11px
+			opacity: 0
+			transition: all .3s ease-in-out
+			color: $negro
+	li
+		line-height: 1
+		margin: 0 0 17px 0
+		&:last-child
+			margin-bottom: 0
+.btn__filter
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	padding: 20px 0 20px 0
+	box-sizing: border-box
+	input
+		border: 0
+		background: none
+		font-size: 14px
+		font-family: $font__001
+		color: $negro
+.overlay__filter
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: $negro
+	opacity: 0
+	transition: all .3s ease-in-out
+	visibility: hidden
+	z-index: 834
+	&.active
+		opacity: .5
+		visibility: visible
+.btn__price__filter
+	.filter__item__ctn
+		width: 270px
+	.filter__form__ctn p
+		font-size: 12px
+		color: $negro
+		font-family: $font__001
+		margin: 0
+	.btn__filter
+		padding-top: 10px
+.filter__price
+	width: 100%
+	max-width: 180px
+	margin: 0 auto	
+	padding: 15px 0 0 0
+	box-sizing: border-box
+	.ui-corner-all
+		border-radius: 0 !important
+	.ui-widget-content .ui-state-default
+		height: 18px
+		width: 18px
+		border-radius: 100% !important
+		background: transparent
+		border: 1px solid $negro
+		background: $blanco
+	.ui-slider-horizontal
+		height: 10px
+		background: none
+	.ui-widget-header
+		background:  linear-gradient(to right, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+.filter__price__info
+	padding-top: 12px
+	box-sizing: border-box
+	input
+		border: 0 !important
+		font-size: 12px
+		color: $negro
+		font-family: $font__001
+.ctn__search
+	width: 100%
+	position: relative
+	button
+		position: absolute
+		top: 0
+		bottom: 0
+		margin: auto
+		left: 10px
+		width: 15px
+		height: 16px
+		background: none
+		border: 0
+	img
+		max-width: 100%
+		display: block
+		height: auto
+	input
+		height: 35px
+		width: 270px
+		border: 2px solid $negro
+		padding: 0 10px 0 35px
+		box-sizing: border-box
+		font-size: 14px
+		font-family: $font__001
+		color: $negro
+		&::placeholder
+			color: $negro
+.search__mobile
+	display: none
+.ctn__items__gnral__wrap__sec
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+	transition: width .7s ease
+.filter__blog
+	.ctn__filters__search
+		//width: 100%
+body.active
+	overflow: hidden
+@media screen and (min-width: 1025px)
+	.ctn__items__gnral__wrap
+		&.active
+			display: inherit
+			flex-wrap: inherit
+			overflow: hidden
+	.ctn__items__gnral__wrap__sec
+		&.active
+			float: left
+			width: 59.5%
+			overflow: hidden
+			.item__gnral
+				width: calc(50% - 15px)
+				margin-right: 20px
+				margin-bottom: 20px
+				.g__item__one
+					figure
+						position: absolute
+						top: 0
+						left: 0
+						height: 100%
+					&:before
+						content: ""
+						display: block
+						padding-bottom: 100%
+				&:nth-child(even)
+					margin-right: 0
+	.filter__item:hover 
+		.filter__item__parraf
+			border-image: linear-gradient(to left, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+			border-width: 1px
+			border-image-slice: 1
+	.btn__create:hover
+		background: $blanco
+		color: $negro
+@media screen and (max-width: 1024px)
+	.btn__create
+		background: $negro
+		color: $blanco
+	//.btnMap 
+		//display: none
+@media screen and (max-width: 767px)
+	.filter__destinations
+		.ctn__filters__items
+			width: auto
+		.ctn__filters__search
+			width: auto
+	.filter__suggested
+		.ctn__filters__items
+			width: calc(100% - 85px)
+		.ctn__filters__search
+			width: 80px
+	.filter__accomodations
+		.ctn__filters__items
+			//width: calc(100% - 30px)
+			&.active__mobile
+				position: absolute
+				opacity: 0
+				visibility: hidden
+				z-index: -1
+		.ctn__search
+			position: absolute
+			top: 0
+			left: 0
+			opacity: 0
+			z-index: -1
+			visibility: hidden
+			width: 100%
+			transition: all .3s ease-in-out
+			&.active__mobile
+				opacity: 1
+				z-index: 2
+				visibility: visible
+				position: relative
+		.ctn__filters__search
+			display: none
+			position: relative
+			width: calc(100% - 30px)
+			&.active__mobile
+				display: block
+
+	.btn__create
+		font-size: 10px
+		text-align: center
+		padding: 5px
+	.ctn__items__gnral__wrap
+		padding: 0
+	.filter__item__parraf
+		font-size: 13px
+	.filter__item
+		position: inherit
+		margin-right: 10px
+
+	.filter__item__ctn
+		width: calc(100% - 30px) !important
+		max-height: 75vh
+		right: 0
+		margin: auto
+		top: 0
+	.filter__form__ctn
+		max-width: 260px
+		margin: 0 auto
+		h3
+			display: block
+			margin-bottom: 20px
+	.btn__filter
+		padding-top: 15px
+		margin-top: 20px
+		justify-content: center
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 1px
+			background:  linear-gradient(to right, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+	.filter__price
+		max-width: calc(100% - 18px)
+	.search__mobile
+		width: 16px
+		display: block
+		span
+			font-size: 16px
+			display: none
+			transition: all .3s ease-in-out
+		img
+			max-width: 100%
+			display: block
+			height: auto
+			transition: all .3s ease-in-out
+		&.active
+			span
+				display: block
+			img
+				display: none
+	.ctn__filters
+		padding: 18px 0
+@media screen and (max-width: 480px)
+	.filter__item
+		margin-right: 8px
+	.filter__item__parraf
+		padding-right: 5px
+		padding-left: 5px
+		font-size: 12px
+		&:last-child
+			margin-right: 0
+@media screen and (max-width: 400px)
+	.filter__item
+		margin-right: 5px
+	.filter__item__parraf
+		font-size: 11px
+@media screen and (max-width: 330px)
+	.filter__item__parraf
+		font-size: 8px
+
+.no_results
+	padding: 200px 0
+	text-align: center
+	width: 100%
+
+.loading-results
+	padding: 200px 0
+	text-align: center
+	width: 100%
+	span
+		display: block !important
+		margin: 10px auto !important
+		position: relative
+		width: 20px !important
+		height: 20px !important
+		line-height: 20px
+		text-align: center
+		background-image: none !important
+		animation: fa-spin 2s infinite linear, colourful 2s infinite linear
+		animation-direction: reverse
+		&:before
+			font-size: 20px
+			text-align: center
+
+// @-webkit-keyframes fa-spin 
+// 	0% 
+// 		-webkit-transform: rotate(0deg)
+// 		transform: rotate(0deg)
+// 	100% 
+// 		-webkit-transform: rotate(359deg)
+// 		transform: rotate(359deg)
+ 
+@keyframes fa-spin 
+	0% 
+		-webkit-transform: rotate(0deg)
+		transform: rotate(0deg)
+	100% 
+		-webkit-transform: rotate(359deg)
+		transform: rotate(359deg)
+
+// $colourful: linear-gradient(to left, #6d9f95 0%,#6d9f5d 38%,#ff9f17 69%,#ff4717 100%)
+
+@keyframes colourful
+	0%
+		color: #6d9f95
+	38%
+		color: #6d9f5d
+	69%
+		color: #ff9f17
+	100%
+		color: #ff4717

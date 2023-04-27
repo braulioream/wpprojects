@@ -1,0 +1,568 @@
+.suggested__journey__item__bckgrnd
+  width: 25vw
+  height: 25vw
+  background-size: cover
+  position: relative
+  overflow: hidden
+
+.inicio__slide--wrap
+  position: relative
+
+.inicio__content 
+  &.title__general__text
+    margin: 0  
+    p
+      font-size: 20px
+      margin: 0  
+      line-height: 1.2
+
+.inicio__prin__slide
+  height: calc(100% - 90px)
+  min-height: calc(100% - 90px)
+  opacity: .5
+  display: none
+  &.blue 
+    background: blue
+  &.red 
+    background: red
+
+.inicio__slide
+  background-size: cover !important
+  height: calc(100% - 90px)
+  min-height: calc(100% - 90px)
+.inicio__slide--logo
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  position: absolute
+  top: 0
+  left: 0
+  img
+    width: 255px
+
+.inicio__slide--botones
+  width: 100%
+  position: absolute
+  bottom: 0
+  nav
+    display: flex
+    justify-content: space-around
+    width: 100%
+    a
+      width: 370px
+      background-color: rgba(0,0,0,0.4)
+      text-align: center
+      padding: 20.5px 0
+      color: white
+      text-transform: uppercase
+      font-family: "Raleway-SemiBold"
+      margin: 0
+      transition: all 0.2s
+      &:hover:nth-child(1)
+        background-color: rgba(255, 0, 0, 0.6)
+      &:hover:nth-child(2)
+        background-color: rgba(151, 181, 0, 0.6)
+      &:hover:nth-child(3)
+        background-color: rgba(0, 181, 141, 0.6)
+
+.inicio__info
+  width: 100%
+  max-width: 1010px
+  padding: 65px 20px
+  min-height: 184px
+  margin: 0 auto
+  text-align: center
+  box-sizing: border-box
+  *
+    text-align: center
+
+.servicio__block
+  padding: 60px 0
+  text-align: center
+  .servicio__block__more
+    margin: 22px 0 30px 0
+.servicio_suggested
+  padding-top: 50px
+  padding-bottom: 30px
+.servicio__block__items
+  nav
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    max-width: 1200px
+    margin: auto
+    a.g__item__one
+      width: 270px
+      margin: 0 0 30px 0
+      &:hover
+        &:nth-child(4n+1)
+          figure >span
+            background: rgba(255, 0, 0, 0.6)
+        &:nth-child(4n+2)
+          figure >span
+            background: rgba(255, 128, 0, 0.6)
+        &:nth-child(4n+3)
+          figure >span
+            background: rgba(151, 181, 0, 0.6)
+        &:nth-child(4n)
+          figure >span
+            background: rgba(0, 181, 141, 0.6)
+  figure
+    background-size: cover !important
+
+.servicio__destination
+  .servicio__block__items
+    ul
+      overflow: hidden
+    li
+      cursor: pointer
+      margin: 0 10px
+      height: 400px
+      position: relative
+      &.slick-current
+        a
+          pointer-events: inherit
+        .destination__item__data
+          h1
+            width: auto
+      a
+        pointer-events: none
+        display: block
+        height: 100%
+        width: 100%
+      .destination__item__bckgrnd
+        width: 100%
+        height: 100%
+        background-position: center
+        background-size: cover
+        z-index: 0
+      .destination__item__data
+        background: rgba(0,0,0,0.25)
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        z-index: 100
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        transition: all .2s
+        h1
+          color: white
+          margin: 0 25px
+          width: 125px
+          line-height: 1.4
+          font-family: "Raleway-SemiBold"
+          font-size: 15px
+          text-transform: uppercase
+
+.servicio__block__items
+  li
+    &:hover
+      .destination__item__data
+        background: rgba(0,0,0,0) !important
+
+.slick-current
+  .destination__item__data
+    justify-content: center !important
+    a
+      width: 100% !important
+    h1
+      font-size: 25px !important
+  & + .slick-slide
+    .destination__item__data
+      justify-content: flex-start !important
+
+.servicio__accom
+  .g__item__two__inside
+    width: 170px
+    height: 220px
+    margin: 0
+
+.g__item__two__inside
+  figure
+    background-size: cover !important
+
+.servicio__blog
+  .servicio__block__items
+    a
+      margin: 0
+  .g__item__two__inside
+    figure
+      width: 370px !important
+      height: 240px !important
+
+.servicio__test--testimonials
+  width: 850px
+  margin: 0 auto
+  p
+    display: block
+    width: 770px
+    min-height: 35px
+    text-align: center
+    margin: 30px auto 0 auto
+    position: relative
+    font-size: 15px
+    &:before
+      content: url("../images/com-l.png")
+      position: absolute
+      top: 0
+      left: -20px
+    &:after
+      content: url("../images/com-r.png")
+      position: absolute
+      top: 0
+      right: -20px
+  span
+    margin: 20px auto 0 auto
+    display: block
+    text-align: left
+    width: 805px
+    font-size: 15px
+.servicio__test
+  padding: 50px 0
+.servicio__test--testimonials
+  .slick-prev, .slick-next
+    color: black
+    position: absolute
+    border: none
+    padding: 0
+    background: none
+    top: 50%
+    margin-top: -20px
+    height: 40px
+    width: 40px
+    text-align: center
+    pointer-events: auto
+    font-size: 0
+    z-index: 50
+    cursor: pointer
+    transition: all .25s ease-in-out
+    &:hover
+      opacity: .5
+    &:before
+      font-family: 'icomoon'
+      font-size: 25px
+      color: white
+      line-height: 40px
+  .slick-prev
+    left: calc(50% - 500px)
+    &:before
+      content: "\e90b"
+      color: black
+  .slick-next
+    right: calc(50% - 500px)
+    &:before
+      content: "\e90a"
+      color: black
+
+.servicio__destination
+  .slick-prev, .slick-next
+    position: absolute
+    border: none
+    padding: 0
+    background: none
+    top: 50%
+    margin-top: -40px
+    height: 12px
+    width: 125px
+    text-align: center
+    pointer-events: auto
+    font-size: 0
+    z-index: 50
+    cursor: pointer
+    transition: all .25s ease-in-out
+    &:hover
+      opacity: .5
+    &:before
+      display: none
+  .slick-prev
+    left: 40px
+    background: url('../images/prev-slider.png') no-repeat center
+  .slick-next
+    right: 40px
+    background: url('../images/next-slider.png') no-repeat center
+@media screen and (max-width: 1024px)
+  .inicio__info
+    width: 100%
+    margin: 0
+    padding: 50px 15px
+    box-sizing: border-box
+    .title__general__text
+      margin-top: 0
+  .servicio__block
+    padding: 50px 0
+  .servicio__block__items
+    width: 100%
+    padding: 0 15px
+    box-sizing: border-box
+    nav
+      justify-content: flex-start
+      a.g__item__one
+        width: calc(25% - 12px)
+        margin-right: 15px
+        &:nth-child(4n+4)
+          margin-right: 0
+  .servicio__destination
+    .slick-prev, .slick-next
+      top: 50%
+  .servicio__block.servicio__accom
+    a
+      width: calc(20% - 10px)
+      margin: 0 12px 0 0
+      &:nth-child(5n+5)
+        margin-right: 0
+    .g__item__two__inside
+      width: 100%
+  .servicio__block.servicio__blog
+    nav a
+      width: calc(33.33333% - 10px)
+      margin-right: 15px
+      &:nth-child(3n+3)
+        margin-right: 0
+    .g__item__two__inside figure
+      width: 100% !important
+  .inicio__slide--botones nav a
+    width: 30.5%
+  .servicio__destination
+    .servicio__block__items 
+      ul
+        list-style: none
+        margin: 0
+        padding: 0
+        display: flex
+        flex-wrap: wrap
+      li
+        margin: 0 15px 15px 0
+        width: calc(50% - 8px)
+        height: 200px
+        .destination__item__data
+          justify-content: center
+        &:nth-child(even)
+          margin-right: 0
+@media screen and (max-width: 960px)
+  .inicio__slide
+    height: calc(100% - 60px)
+    min-height: calc(100% - 60px)
+  .servicio__test--testimonials
+    width: 100%
+    p
+      width: 100%
+      padding: 0 25px
+      box-sizing: border-box
+      text-align: left
+      &:before, &:after
+        width: 21px
+        height: 17px
+      &:before
+        left: 0
+      &:after
+        right: 0
+    span 
+      padding: 0 25px
+      box-sizing: border-box
+    .slick-prev, .slick-next
+      width: 25px
+      height: 25px
+      &:before
+        line-height: 25px
+        font-size: 20px
+    .slick-prev
+      left: -45px
+    .slick-next
+      right: -45px
+  .servicio__test
+    padding-left: 55px
+    padding-right: 55px
+  .servicio__block__items
+    nav
+      a.g__item__one
+        width: calc(33% - 8px)
+        margin-bottom: 15px
+        position: relative
+        &:nth-child(3n+3)
+          margin-right: 0
+        &:nth-child(4n+4)
+          margin-right: 15px
+        &:before
+          content: ""
+          display: block
+          padding-bottom: 100%
+        figure
+          height: 100%
+          position: absolute
+          top: 0
+          left: 0
+  .servicio__block.servicio__accom
+    a
+      width: calc(25% - 10px)
+      margin-bottom: 15px
+      &:nth-child(3n+3)
+        margin-right: 15px
+      &:nth-child(4n+4)
+        margin-right: 0
+      &:nth-child(5n+5)
+        margin-right: 15px
+@media screen and (max-width: 767px)
+  
+
+  .inicio__info, .servicio__block
+    padding-top: 30px
+    padding-bottom: 30px
+  .servicio__block__items
+    nav
+      a.g__item__one
+        width: calc(50% - 8px)
+        max-width: inherit !important
+        &:nth-child(3n+3) 
+          margin-right: 15px
+        &:nth-child(even)
+          margin-right: 0
+  .servicio__block.servicio__accom
+    a
+      width: calc(50% - 8px)
+      height: auto
+      margin-right: 15px !important
+      &:nth-child(even)
+        margin-right: 0 !important
+  .servicio__block.servicio__blog
+    nav a
+      width: calc(50% - 8px)
+      margin-bottom: 15px
+      &:nth-child(3n+3) 
+        margin-right: 15px
+      &:nth-child(even)
+        margin-right: 0
+  .inicio__slide--botones 
+    nav
+      flex-wrap: wrap
+      a
+        width: 100%
+        margin-bottom: 7px
+        padding: 12px 0
+        font-size: 12px
+        &:last-child
+          margin-bottom: 0
+  
+  .inicio__content
+    &.title__general__text
+      p
+        font-size: 15px
+  .servicio__test--testimonials
+    p
+      padding: 0
+      font-size: 12px
+      line-height: 1.3
+      &:before, &:after
+        display: none
+    span
+      padding: 0
+      font-size: 12px
+      margin-top: 9px
+@media screen and (max-width: 480px)
+  .servicio_suggested
+    .servicio__block__items
+      padding-right: 0
+      padding-left: 0
+      .g__item__one 
+        figure
+          height: 150px
+  .servicio__destination, .servicio__block
+    .servicio__block__items
+      padding-right: 0
+      padding-left: 0
+  .servicio__destination
+    .servicio__block__items li 
+      height: 140px
+  .servicio__block
+    .g__item__two__inside
+      height: 140px
+    .g__item__two figure
+      height: 140px
+    .g__item__two__inside figure
+      height: 140px !important
+    &.servicio__blog
+      .g__item__two__inside
+        height: 240px
+        figure
+          height: 100% !important
+  .servicio__block__items 
+    nav 
+      a.g__item__one
+        width: 100%
+        margin-right: 0 !important
+        figure
+          position: inherit
+        &:last-child
+          margin-bottom: 0
+        &:before
+          display: none
+  .servicio__block.servicio__blog
+    nav a
+      width: 100%
+      margin-right: 0 !important
+      &:last-child
+        margin-bottom: 0
+  .servicio__block.servicio__accom
+    .servicio__block__items
+      a
+        &:before
+          content: ""
+          display: block
+          padding-bottom: 100%
+        .g__item__two__inside 
+          height: 100%
+          position: absolute
+          top: 0
+          left: 0
+          figure
+            height: 100% !important
+            position: absolute
+            top: 0
+            left: 0
+  .inicio__slide--logo img
+      width: 217px
+  .servicio__destination
+    .servicio__block__items 
+      li
+        float: none
+        margin: 0 0 15px 0
+        width: 100%
+        &:last-child
+          margin-bottom: 0
+
+/* hidden message result */
+
+.no_results
+  display: none
+  a
+    margin: 10px 0 0 0
+    display: inline-block
+    padding: 10px
+    border: 1px solid $negro
+    text-transform: uppercase
+    font-size: 14px
+    color: $negro
+    font-family: $font__003
+    margin: 0
+    position: relative
+    background: $blanco
+    cursor: pointer
+    &.active, &.activeTwo
+      //z-index: 9999
+    &.colors, &.colorsTwo
+      border-image: linear-gradient(to left, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+      border-width: 1px
+      border-image-slice: 1
+    &:hover
+      border-image: linear-gradient(to left, #6D9F95 0%, #6D9F5D 40%, #FF9F17 70%, #FF4717 100%)
+      border-width: 1px
+      border-image-slice: 1
+
+.no_results
+  &.show_message_no_result
+    display: block

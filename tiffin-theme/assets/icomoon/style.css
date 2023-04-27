@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'tiffin-icomoon';
+  src:  url('fonts/icomoon.eot?2jgmca');
+  src:  url('fonts/icomoon.eot?2jgmca#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2jgmca') format('truetype'),
+    url('fonts/icomoon.woff?2jgmca') format('woff'),
+    url('fonts/icomoon.svg?2jgmca#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tiffin-icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-g:before {
+  content: "\e900";
+  color: #bac7ca;
+}
+.icon-icon-vegan-gray .path1:before {
+  content: "\e901";
+  color: rgb(186, 199, 202);
+}
+.icon-icon-vegan-gray .path2:before {
+  content: "\e902";
+  margin-left: -1.0048828125em;
+  color: rgb(186, 199, 202);
+}
+.icon-icon-vegan-gray .path3:before {
+  content: "\e903";
+  margin-left: -1.0048828125em;
+  color: rgb(209, 218, 220);
+}
+.icon-vegetarian-grey:before {
+  content: "\e904";
+  color: #bac7ca;
+}

@@ -1,0 +1,49 @@
+.destinos__map
+	height: 570px
+	top: 0
+	opacity: 0
+	z-index: -1
+	visibility: hidden
+	transform: translateX(100px)
+	transition: all .7s ease
+	&.active
+		opacity: 1
+		z-index: 8
+		visibility: visible
+		transform: translateX(0)
+	#map
+		height: 100%
+		width: 100%
+	.listBeaches
+		display: none !important
+@media screen and (min-width: 1025px)
+	.destinos__map
+		height: 0
+		&.active
+			width: 39.5%
+			height: 685px
+			float: right
+			overflow: hidden
+			margin-left: 0
+			margin-bottom: 30px
+			transition-delay: .4s
+@media screen and (max-width: 1024px)
+	.destinos__map
+		width: calc(50% - 21px)
+		right: 15px
+		height: 555px
+		position: absolute 
+@media screen and (max-width: 960px)
+	.destinos__map
+		width: calc(66.666666% - 25px)
+@media screen and (max-width: 767px)
+	.destinos__map
+		width: 100%
+		right: 0
+@media screen and (max-width: 480px)
+	.destinos__map
+		height: 470px
+
+@media screen and (max-width: 1024px)
+	.page-template-theme-destinations .btnMap
+		display: none

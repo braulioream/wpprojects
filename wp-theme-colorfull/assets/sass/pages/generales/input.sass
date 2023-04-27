@@ -1,0 +1,678 @@
+.input__g
+	text-align: left
+	position: relative
+	.input__g__input
+		width: 100%
+		height: 40px
+		line-height: 40px
+		box-sizing: border-box
+		border: none 
+		margin: 0
+		padding: 0
+		border-radius: 0
+		background: none
+		background: white
+		border-radius: 0px
+		-webkit-border-radius: 0px
+		color: $negro
+		background: $color__006
+		font-family: $font__003
+		font-size: 15px
+		padding-left: 15px
+		padding-right: 15px
+		transition: all .25s ease-in-out
+	.input__g__input::-webkit-input-placeholder
+		color: $negro
+		font-family: $font__003
+		font-size: 15px
+		transition: all .25s ease-in-out
+		text-transform: capitalize
+	.input__g__input::-moz-placeholder
+		color: $negro
+		font-family: $font__003
+		font-size: 15px
+		transition: all .25s ease-in-out
+		text-transform: capitalize
+	.input__g__input:-ms-input-placeholder
+		color: $negro
+		font-family: $font__003
+		font-size: 15px
+		transition: all .25s ease-in-out
+		text-transform: capitalize
+	.input__g__input::-moz-placeholder
+		color: $negro
+		font-family: $font__003
+		font-size: 15px
+		transition: all .25s ease-in-out
+		text-transform: capitalize
+
+// textarea
+.input__g--textarea
+	.input__g__input
+		height: 135px
+		line-height: 1.1
+		padding-top: 10px
+
+// titulo inline 
+.input__g--inline
+	display: flex
+	align-items: center
+	.input__g__title
+		margin: 0
+		margin-right: 15px
+	.input__g__inside
+		width: 100%
+
+.input__g__title
+	margin: 0
+	display: block
+	margin-bottom: 8px
+	color: $negro
+	font-family: $font__003
+	line-height: 1.33
+	cursor: auto
+	font-size: 15px
+	text-transform: uppercase
+	i
+		color: $color__004
+		font-style: normal
+
+// select
+.input__g--select--default
+	position: relative
+	select
+		position: relative
+
+.input__g--select
+	select
+		padding-right: 35px
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		cursor: pointer
+		&::-ms-expand
+			display: none
+	.input__g__ico
+		font-size: 14px
+		right: 15px
+		display: block
+		color: $negro
+		transform: rotate(90deg)
+
+//efecto
+.input__g--effect.active
+	.input__g__input
+		border: 1px solid red
+	.input__g__input::-webkit-input-placeholder
+		color: red
+	.input__g__input::-moz-placeholder
+		color: red
+	.input__g__input:-ms-input-placeholder
+		color: red
+	.input__g__input::-moz-placeholder
+		color: red
+	
+// icons
+.input__g__inside
+	position: relative
+
+.input__g__ico
+	display: block
+	position: absolute
+	top: 12px
+	font-size: 16px
+	line-height: 40px
+	pointer-events: none
+	z-index: 2
+	color: $negro
+
+.input__g__ico__left
+	left: 10px
+	
+.input__g__ico__right
+	right: 10px
+
+.input__g__icon--left
+	.input__g__input 
+		padding-left: 40px
+	
+.input__g__icon--right
+	.input__g__input 
+		padding-right: 40px
+	
+.input__g__icon--all
+	.input__g__input 
+		padding-right: 40px
+		padding-left: 40px
+
+.input__g__button--right
+	.input__g__button__right
+		position: absolute
+		top: 0
+		right: 0
+	.input__g__input
+		padding-right: 40px
+		
+
+.input__g--button
+	.button__g
+		position: absolute
+		top: 0
+
+.input__g--button--right
+	.input__g__input
+		padding-right: 60px
+	.button__g
+		right: 0
+
+.input__g--button--left
+	.input__g__input
+		padding-left: 60px
+	.button__g
+		left: 0
+
+.input__g__button
+	line-height: 40px
+	border: none
+	background: none
+	padding: 0
+	padding: 0 15px
+	box-sizing: border-box
+
+
+// checkbox radio
+.input__g--check--radio
+	input[type="checkbox"], input[type="radio"]
+		display: none
+
+.input__g__inside__container
+	display: flex
+	align-items: center 
+
+.input__g__figure
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+
+.input__g__text
+	width: calc(100% - 19px)
+	padding-left: 14px
+	box-sizing: border-box
+	color: $negro
+	line-height: 1.1
+	font-size: 14px
+	a
+		padding-left: 3px
+		font-size: 14px
+		color: $color__001
+		text-decoration: underline
+
+.input__g--radio
+	.input__g__figure
+		width: 15px
+		height: 15px
+		&:before
+			width: 100%
+			height: 100%
+			border-radius: 100%
+			border: 1px solid $color__001
+			box-sizing: border-box
+		&:after
+			right: 0
+			bottom: 0
+			margin: auto
+			width: 7px
+			height: 7px
+			border-radius: 100%
+			background: $negro
+			opacity: 0
+			visibility: hidden
+			transition: all .2s linear
+
+.input__g--check--radio
+	input[type="radio"]:checked + .input__g--check--radio--label .input__g__figure
+		&:after
+			opacity: 1
+			visibility: visible
+
+.input__g--checkbox
+	.input__g__figure
+		width: 14px
+		height: 14px
+		&:before
+			width: 100%
+			height: 100%
+			border-radius: 2px
+			border: 1px solid $color__001
+			box-sizing: border-box
+			transition: all .1s linear
+		&:after
+			content: "\e902"
+			font-family: 'icomoon'
+			top: 50%
+			transform: translateY(-50%)
+			right: 0
+			text-align: center
+			margin: auto
+			opacity: 0
+			visibility: hidden
+			font-size: 8px
+			color: $blanco
+			transition: all .2s linear
+
+.input__g--check--radio
+	input[type="checkbox"]:checked + .input__g--check--radio--label .input__g__figure
+		&:after
+			opacity: 1
+			visibility: visible
+		&:before
+			background: $color__005
+			border: 1px solid $color__005
+
+.input__g__radio__button
+	height: 50px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	border: 1px solid silver
+	box-sizing: border-box
+	position: relative
+	transition: .4s
+	overflow: hidden
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		transform: translateX(0)
+		width: 0
+		background: silver
+		transition: 0s all
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		background: silver
+		height: 100%
+		width: 100%
+		transform: translateX(100%)
+		width: 100%
+		opacity: 0
+		transition: .4s transform,0s opacity .4s
+
+.input__g__radio__text
+	font-size: 12px
+	display: block
+	margin-top: 12px
+	color: silver
+	text-align: center
+	transition: .4s
+
+.input__g__radio__icon
+	font-size: 40px
+	color: silver
+	display: block
+	margin: 0
+	position: relative
+	z-index: 3
+	transition: .4s
+	&:before
+		color: silver
+		transition: .4s
+
+// input file
+
+.input__g__file
+	position: relative 
+	input[type="file"]
+		display: none
+
+.input__g__file__label
+	display: flex
+	align-items: center
+	justify-content: space-between
+	position: relative
+	width: 100%
+	height: 40px
+	line-height: 40px
+	box-sizing: border-box
+	border: none
+	border-radius: 0px
+	appearance: none
+	margin-bottom: 0
+	background: $color__006
+	padding: 0 20px
+	overflow: hidden
+	text-align: center
+
+.input__g__file__text
+	display: block
+	margin: 0
+	color: $negro
+	font-family: $font__001
+	font-size: 14px
+	
+.input__g__file__ico
+	display: block
+	margin: 0
+	margin-left: 20px
+	position: static
+	top: 0
+	right: 10px
+	line-height: 50px
+	pointer-events: none
+	z-index: 2
+	box-sizing: border-box
+	color: $negro
+	font-size: 25px
+
+.input__g__file__ico--text
+	display: block
+	font-size: 15px
+	font-family: $font__001
+	color: $negro
+	text-transform: uppercase
+
+.input__g__file__ico--ico
+	display: none
+	line-height: 50px
+	
+
+@media screen and (max-width: 767px)
+	.input__g
+		.input__g__input
+			height: 35px
+			line-height: 35px
+			font-size: 12px
+			&::placeholder
+				font-size: 12px
+
+	.input__g__ico
+		line-height: 35px
+
+	.input__g--textarea .input__g__input
+		height: 130px
+		line-height: 1.1
+
+// columns
+.input__g__lines
+	padding: 0
+	margin: 0
+
+.input__g__line
+	display: flex
+	flex-wrap: wrap
+	.input__g
+		width: 100%
+		margin-bottom: 25px
+	
+.input__g--two-columns
+	.input__g
+		width: 49%
+		display: inline-block
+		margin-right: 2%
+		&:last-child
+			margin-right: 0
+
+.input__g--three-columns
+	.input__g
+		width: 32%
+		display: inline-block
+		margin-right: 2%
+		&:last-child
+			margin-right: 0
+			
+.input__g--four-columns
+	.input__g
+		width: 23.5%
+		display: inline-block
+		margin-right: 2%
+		&:last-child
+			margin-right: 0
+
+@media screen and (max-width: 960px)
+	.input__g--four-columns
+		.input__g
+			width: 49%
+			display: inline-block
+			margin-right: 2%
+			&:nth-child(2n+2)
+				margin-right: 0
+
+@media screen and (max-width: 767px)
+	.input__g--four-columns
+		.input__g
+			width: 100%
+			display: inline-block
+			margin-right: 0
+	
+	.input__g--two-columns
+		.input__g
+			width: 100%
+			display: inline-block
+			margin-right: 0
+	
+	.input__g--three-columns
+		.input__g
+			width: 100%
+			display: inline-block
+			margin-right: 0
+	.input__g__line
+		.input__g
+			margin-bottom: 15px
+
+
+// plugins
+
+// sumo plugin
+.input__g--select--sumoselect
+	.SumoSelect
+		width: 100%
+	.SelectBox
+		padding: 0 50px 0 15px !important
+		box-sizing: border-box
+	.SumoSelect>.CaptionCont>label
+		display: none
+	.SumoSelect>.CaptionCont
+		height: 50px
+		line-height: 50px
+		box-sizing: border-box
+		border: 1px solid #000
+		color: #c0c0c0
+		font-size: 16px
+		cursor: pointer
+	.SumoSelect>.CaptionCont>span
+		padding-right: 0
+	.SumoSelect>.optWrapper
+		top: 50px !important
+	.SumoSelect.open>.CaptionCont, .SumoSelect:focus>.CaptionCont, .SumoSelect:hover>.CaptionCont
+		box-shadow: none !important
+		border: 1px solid #000
+	.SumoSelect>.optWrapper>.options li.opt
+		width: 100%
+		box-sizing: border-box
+		
+.select--animate--one
+	.SumoSelect>.optWrapper
+		display: block !important
+		box-shadow: none
+		overflow: hidden
+		transform: scaleY(0)
+		transform-origin: center top
+		transition: transform 300ms ease
+	.SumoSelect.open>.optWrapper
+		transform: scaleY(1)
+		
+// select2
+.input__g--select--select2
+	width: 100%
+	.select2-container
+		width: 100% !important
+	.select2-container--default .select2-selection--single
+		height: 50px
+		line-height: 50px
+		box-sizing: border-box
+		border: 1px solid #000
+		color: #c0c0c0
+		font-size: 16px
+		cursor: pointer
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered
+		line-height: 50px
+	.select2-selection__arrow
+		display: none !important
+
+// chosen
+.input__g--select--chosen
+	.chosen-container-single .chosen-single
+		height: 50px
+		line-height: 50px
+		box-sizing: border-box
+		border: 1px solid #000
+		color: #c0c0c0
+		font-size: 16px
+		cursor: pointer
+		background: none
+		box-shadow: none
+		border-radius: 0
+	.chosen-container-single .chosen-single div
+		display: none
+		
+
+// select personalized
+.select__personalized
+	width: 100%
+	position: relative
+
+.select__personalized .select__personalized__ae .select__personalized__menu
+	background: blanco
+	position: absolute
+	width: 100%
+	z-index: 20
+	padding-bottom: 20px
+	margin: 0px
+	margin-top: 5px
+	border: 1px solid #D5D5D5
+	box-sizing: border-box
+	list-style-type: none
+	height: 300px
+	overflow: auto
+
+.select__personalized .select__personalized__inside
+	position: relative
+	border: 1px solid #d5d5d5
+	height: 70px
+	line-height: 70px
+	box-sizing: border-box
+	padding: 0 50px 0 25px
+	cursor: pointer
+	overflow: hidden
+	&:before
+		content: ">"
+		font-family: 'icomoon'
+		display: block
+		color: red
+		font-size: 15px
+		position: absolute
+		top: 0
+		right: 10px
+		line-height: 70px
+		z-index: 3
+		pointer-events: none
+		transition: all .2s linear
+	&.open
+		&:before
+			transform: rotate(180deg)
+	
+.select__personalized__menu
+	> p
+		color: #000
+		font-size: 15px
+		font-family: t-2
+		margin: 10px 30px
+		box-sizing: border-box
+		padding: 10px 0
+		border-bottom: 1px solid #E2E2E2
+	p:nth-child(2)
+		padding-top: 0
+	span
+		display: flex
+		align-items: center
+		height: 100%
+	img
+		margin: 0
+		width: 73px
+		height: 40px
+		overflow: hidden
+	li
+		height: 55px
+		line-height: 55px
+		box-sizing: border-box
+		padding: 0 30px
+		cursor: pointer
+		transition: all .2s linear
+		&:hover
+			background: #E2E2E2
+		&.selected 
+			background: #E2E2E2
+	li > span > p
+		margin: 0
+		font-size: 14px
+		font-family: t-1
+		color: #000
+		line-height: 1.1
+		padding-left: 25px
+		
+.select__personalized__content
+	span
+		display: flex
+		align-items: center
+		margin: 0
+		height: 100%
+		img
+			margin: 0
+			width: 73px
+			height: 40px
+			overflow: hidden
+		p
+			margin: 0
+			font-size: 14px
+			font-family: t-1
+			color: #000
+			line-height: 1.1
+			padding-left: 25px
+
+.select__personalized .select__personalized__inside .svg_flecha-1-01
+	position: absolute
+	right: 8px
+	top: 7px
+
+.select__personalized .ae-disabled
+	pointer-events: none
+
+.select__personalized--hide
+	display:none
+
+@media screen and (max-width: 767px)
+	.select__personalized .select__personalized__inside
+		padding: 0 40px 0 15px
+		
+	.select__personalized__menu li
+		padding: 0 15px
+	.input__g__title
+		font-size: 12px
+	.input__g__text
+		font-size: 12px

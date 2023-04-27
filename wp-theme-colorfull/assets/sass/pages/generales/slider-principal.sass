@@ -1,0 +1,254 @@
+.slider__principal
+	position: relative
+	height: 100%
+	overflow: hidden
+	width: 100%
+	display: flex
+	align-items: center
+	.slick-slide
+		display: inline-block
+	.slick-list, .slick-track
+		height: 100%
+.slider__principal__info
+	text-align: center
+	width: 100%
+	padding: 15px 30px
+	box-sizing: border-box
+	z-index: 2
+	h2
+		font-size: 25px
+		font-family: $font__003
+		color: $blanco
+		text-transform: uppercase
+		margin: 0
+		width: 100%
+.slider__principal__list
+	width: 100%
+	position: absolute !important
+	top: 0
+	left: 0
+	height: 100%
+.slider__principal__item
+	display: inline-block
+	position: relative
+	height: 100%
+	overflow: hidden
+
+.slider__principal__item__image
+	height: 100vh !important
+	display: block
+	width: 100%
+	position: relative
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: $color__gradient
+		opacity: 0.25
+
+.slider__principal__container
+	max-width: 1240px
+	padding: 0 20px
+	box-sizing: border-box
+	margin: auto
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	z-index: 10
+	pointer-events: none
+
+// dots
+.slider__principal
+	.slick-dots
+		position: absolute
+		bottom: 20px
+		left: 0
+		right: 0
+		margin: auto
+		text-align: center
+	.slick-dots li
+		display: inline-block
+		vertical-align: top
+		margin: 0 5px
+		&:hover
+			button
+				background: blue
+		&.slick-active
+			button
+				background: blue
+	.slick-dots button
+		margin: 0
+		padding: 0
+		border: none
+		font-size: 0
+		display: inline-block
+		vertical-align: middle
+		width: 10px
+		height: 10px
+		border-radius: 100%
+		background: red
+		cursor: pointer
+		transition: all .25s ease-in-out
+
+// nav - arrows
+.slider__principal
+	.slick-prev, .slick-next
+		position: absolute
+		border: none
+		padding: 0
+		background: none
+		top: 50%
+		margin-top: -20px
+		height: 40px
+		width: 40px
+		text-align: center
+		pointer-events: auto
+		font-size: 0
+		z-index: 50
+		cursor: pointer
+		transition: all .25s ease-in-out
+		&:hover
+			opacity: .5
+		&:before
+			font-family: 'icomoon'
+			font-size: 25px
+			color: white
+			line-height: 40px
+	.slick-prev
+		left: 10px
+		&:before
+			content: "\e90b"
+	.slick-next
+		right: 10px
+		&:before
+			content: "\e90a"
+
+.slider__principal__info__title
+	h3
+		font-size: 25px
+		font-family: $font__003
+		color: $blanco
+		text-transform: uppercase
+		margin: 0
+
+// active animation
+.slider__principal__list
+	opacity: 0
+	visibility: visible
+	transition: all .15s ease-in-out
+
+.slider__principal__list.slick-initialized
+	opacity: 1
+	visibility: visible
+
+.slider__principal__info__title
+	display: block
+	transition: all .5s ease-in-out
+	opacity: 0
+	transform: translateY(-150%)
+
+.slider__principal__item__image
+	transition: all .5s ease-in-out
+	transform: scale(1.25, 1.25)
+		
+.slider__principal .slick-slide.slick-active
+	.slider__principal__info__title
+		opacity: 1
+		transform: translateY(0)
+	.slider__principal__item__image
+		transform: scale(1, 1)
+.slider__principal__title
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	background: linear-gradient(to right, rgba(0,0,0,.5) 0%, rgba(0,0,0,.1) 50%)
+	padding: 15px 
+	box-sizing: border-box
+	z-index: 9999
+	h3
+		color: $blanco
+		font-weight: normal
+		text-transform: uppercase
+		font-size: 11px
+		font-family: $font__003
+		margin: 5px 0 !important
+	p, h4
+		margin: 0
+		color: $blanco
+		font-size: 11px
+		font-family: $font__001
+	h4
+		font-weight: normal
+		display: none
+	&.slider__blog__title
+		h4
+			display: block
+@keyframes animate__image
+	0%
+		transform: scale(1.25, 1.25)
+	100%
+		transform: scale(1, 1)
+	
+@keyframes animate__text
+	0%
+		transform: translateY(-150%)
+		opacity: 0
+		visibility: hidden
+	100%
+		transform: translateY(0)
+		opacity: 1
+		visibility: visible
+
+.slider__principal
+	.slick-slide
+		&.active
+			.slider__principal__item__image
+				animation: animate__image .25s alternate
+			.slider__principal__info__title
+				animation: animate__text .5s alternate
+
+
+@media screen and (max-width: 1024px)
+	.slider__principal__info__title
+		h3
+			font-size: 25px
+
+
+@media screen and (max-width: 767px)
+	.slider__principal__info
+		h2
+			font-size: 20px
+	.slider__principal__info__title
+		h3
+			font-size: 20px
+
+	.slider__principal .slick-prev, .slider__principal .slick-next
+		width: 30px
+		height: 30px
+		margin-top: -15px
+		&:before
+			line-height: 30px
+			font-size: 17px
+
+	.slider__principal .slick-next
+		right: 5px
+
+	.slider__principal .slick-prev
+		left: 5px
+
+@media screen and (max-width: 400px)
+	.slider__principal .slick-prev, .slider__principal .slick-next
+		display: none

@@ -1,0 +1,213 @@
+.create__desc
+  margin: 60px auto
+  max-width: 770px
+  width: 100%
+  transition: all 0.2s
+  .title__general__text
+    text-align: center
+  .content__styles__all
+    font-size: 16px
+    p
+      line-height: 1.3
+@media screen and (max-width: 1024px)
+  .create__desc
+    margin: 0 auto
+    padding: 50px 15px
+    box-sizing: border-box
+@media screen and (max-width: 767px)
+  .create__desc
+    padding: 35px 15px
+    .content__styles__all
+      font-size: 12px
+    .title__general__text
+      text-align: justify
+.create__form__item--portada
+  width: 100%
+  height: 100%
+  background-size: cover !important
+
+.create__form
+  overflow: hidden
+  max-width: 770px
+  width: 100%
+  margin: 80px auto 0 auto
+
+.create__form--title
+  width: 600px
+  float: right
+  overflow: hidden
+  padding: 15px 15px 0 15px
+  h3
+    font: 12px "Raleway-Medium"
+    text-transform: uppercase
+    margin: 0
+
+.create__form__section
+  clear: both
+  overflow: hidden
+  margin: 0 auto 20px auto
+  display: flex
+  // max-width: 770px
+  width: 100%
+  justify-content: space-between
+  align-items: flex-end
+  border-bottom: 1px solid $color__gradient
+
+.create__form__section--title
+  h3
+    font: 15px "Raleway-SemiBold"
+    text-transform: uppercase
+    margin: 0 0 20px 0
+
+.create__form__section--items
+  ul
+    max-width: 601px
+    width: 100%
+    list-style: none
+  li
+    width: 170px
+    height: 170px
+    position: relative
+    margin: 15px
+    float: left
+    cursor: pointer
+  .create__form__item--datos
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,0.25)
+    z-index: 100
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    top: 0
+    left: 0
+    h3
+      color: white
+      font: 15px "Raleway-SemiBold"
+      text-transform: uppercase
+      margin: 0
+  input
+    position: absolute
+    width: 15px
+    height: 15px
+    bottom: 15px
+    right: 15px
+    cursor: pointer
+  label
+    width: 100%
+    height: 100%
+    // background-color: rgba(0,0,0,0.5)
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 100
+
+.create__form--form
+  max-width: 770px
+  width: 100%
+  margin: 40px auto
+  overflow: hidden
+  form
+    max-width: 600px
+    width: 100%
+    padding: 0 15px 20px 15px
+    float: right
+  .input__g
+    .input__g__input
+      font-family: $font__001
+    .input__g__input::-webkit-input-placeholder
+      font-family: $font__001
+    .input__g__input::-moz-placeholder
+      font-family: $font__001
+    .input__g__input:-ms-input-placeholder
+      font-family: $font__001
+    .input__g__input::-moz-placeholder
+      font-family: $font__001
+@media screen and (min-width: 1025px)
+  .create__form--form
+    .book_now:hover
+      background: $color__gradient
+@media screen and (max-width: 1024px)
+  .create__form
+    margin: 0 auto
+    padding: 50px 15px
+    box-sizing: border-box
+  .create__form--form 
+    margin-bottom: 0
+@media screen and (max-width: 960px)
+  .create__form--title
+    width: 100% !important
+    float: left
+    padding: 0 !important
+  .create__form__section
+    flex-direction: column
+    align-items: flex-start !important
+  .create__form__section--items
+    width: 100%
+    ul
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: inherit
+      max-width: 100% 
+      li
+        margin: 0 10px 10px 0
+        width: calc(33.333% - 10px)
+        &:nth-child(3n+3)
+          margin-right: 0
+  .create__form--form 
+    form
+      padding: 0
+      margin: 0 auto
+      float: none
+@media screen and (max-width: 767px)
+  .create__form
+    padding-top: 40px
+    padding-bottom: 10px
+    .separador-2
+      display: none
+  .create__form--title 
+    margin-bottom: 15px
+    h3
+      font-size: 10px
+  .create__form__section
+    margin-bottom: 0
+    padding-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+  .create__form__section--title
+    padding-bottom: 10px
+    margin-bottom: 10px
+    position: relative
+    width: 100%
+    &:before
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 1px
+      background: linear-gradient(to left, #6d9f95 0%,#6d9f5d 38%,#ff9f17 69%,#ff4717 100%)
+    h3
+      font-size: 12px
+      margin-bottom: 0
+  .create__form__section--items
+    ul
+      li
+        width: calc(50% - 5px)
+        &:nth-child(3n+3)
+          margin-right: 10px
+        &:nth-child(even)
+          margin-right: 0
+  .create__form--form
+    margin-top: 0
+    padding-bottom: 15px
+@media screen and (max-width: 359px)
+  .create__form__section--items
+    ul
+      li
+        width: 100%
+        margin-right: 0 !important
+

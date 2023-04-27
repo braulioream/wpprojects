@@ -1,0 +1,409 @@
+html,body
+	height: 100%
+	margin: 0
+	width: 100%
+.header__wrap
+	overflow: hidden
+	position: relative
+	height: 95px
+	&.header--scrolling
+		.header__top
+			position: inherit
+		.header__fixed
+			transform: translateY(-25px)
+			
+.header__fixed
+	height: 70px
+	position: fixed
+	// top: 30px
+	top: 25px
+	width: 100%
+	z-index: 800
+	left: 0
+	background: $blanco
+	transition: all .15s ease
+
+.header__top
+	width: 100%
+	background: black
+	height: 25px
+	display: flex
+	align-items: center
+	font-size: 12px
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 750
+
+.header__top__container
+	display: flex
+	align-items: center
+	justify-content: space-between
+	max-width: 1240px
+
+.header__top__left
+	display: flex
+	align-items: center
+	font-size: 12px
+	article
+		position: relative
+		padding-right: 15px
+		padding-left: 15px
+
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			margin: auto
+			right: 0
+			height: 15px
+			width: 1px
+			background: $blanco
+		span
+			color: $blanco
+		a
+			color: $blanco
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+			&:before
+				display: none
+
+.header__top__right
+	display: flex
+	align-items: center
+
+.header__top__currency
+	span
+		color: $blanco
+		font-size: 12px
+	ul
+		margin: 0
+		padding: 0
+		display: flex
+		align-items: center
+	li 
+		list-style: none
+		padding: 0 10px
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			margin: auto
+			right: 0
+			height: 15px
+			width: 1px
+			background: $blanco
+		&.active
+			a
+				text-decoration: underline
+	li:last-child
+		padding-right: 0
+		&:before
+			display: none
+	a
+		color: $blanco
+		font-size: 12px
+		color: $blanco
+		font-family: $font__001
+
+.header__menu__languages__list
+	padding-left: 60px
+	display: flex
+	align-items: center
+	span
+		color: $blanco
+		font-size: 12px
+	ul
+		margin: 0
+		padding: 0
+		padding-left: 10px
+		display: flex
+		align-items: center
+	li 
+		list-style: none
+		padding: 0 10px
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			margin: auto
+			right: 0
+			height: 15px
+			width: 1px
+			background: $blanco
+		&.current-lang
+			a
+				text-decoration: underline
+	li:last-child
+		padding-right: 0
+		&:before
+			display: none
+	a
+		color: $blanco
+		font-size: 12px
+		color: $blanco
+		font-family: $font__001
+		&:hover
+			text-decoration: underline	
+
+.header__top__currency
+	display: flex
+	align-items: center
+
+.header__logo
+	display: block
+	width: 35px
+	height: 35px
+	margin: 0
+	img
+		max-width: 100%
+		height: auto
+		display: block
+
+.header__main
+	height: 60px
+	display: flex
+	align-items: center
+	width: 100%
+	justify-content: space-between
+	position: relative
+	padding-bottom: 10px
+	box-sizing: border-box
+	&:before
+		content: ""
+
+.header__main__container
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	max-width: 1240px
+
+.header__list
+	list-style: none
+	float: right
+	li
+		display: inline-block
+		margin: 0 0 0 15px
+		a
+			text-decoration: none
+			font-family: $font__002
+			color: $negro
+			font-size: 12px
+
+.borde-colourful
+	width: 100%
+	height: 10px
+	background: $colourful
+	box-shadow: 0 6px 12px 1px rgba(0,0,0,.4)
+
+.header__sidebar
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	overflow-y: auto
+	z-index: 1200
+	background: rgba(255,255,255,.9)
+	text-align: center
+	transform: translate(-100%, 0%) matrix(1, 0, 0, 1, 0, 0)
+	transition: all .5s ease-in-out
+	&.active
+		transform: matrix(1, 0, 0, 1, 0, 0)
+
+.header__sidebar__close
+	font-size: 20px
+	color: $blanco
+	cursor: pointer
+	position: absolute
+	top: 15px
+	right: 15px
+	width: 30px
+	height: 30px
+	display: flex
+	align-items: center
+	justify-content: center
+	&:before
+		content: ""
+		display: block
+		width: 16px
+		height: 16px
+		background: url('../images/iconox-03.svg')
+		background-repeat: no-repeat
+		background-size: 100%
+
+.header__sidebar__menu
+	position: fixed
+	top: 18px
+	right: 10px
+	width: 21px
+	height: 17px
+	z-index: 800
+	background: url('../images/iconox-02.svg')
+	cursor: pointer
+	display: none
+
+.header__sidebar__top
+	background: $negro
+	padding: 10px 0 10px 37px
+	text-align: left
+
+.header__sidebar__top__currency
+	display: flex
+	align-items: center
+	span
+		font-size: 10px
+		color: $blanco
+		font-family: $font__001
+		margin: 0
+	ul
+		margin: 0
+		padding: 0
+		display: flex
+		align-items: center
+	li
+		margin: 10px
+		list-style: none
+	a
+		font-size: 10px
+		padding: 5px 10px
+		color: $blanco
+		border: 1px solid $blanco
+		font-family: $font__001
+		transition: all .25s linear
+		&:hover
+			background: $blanco
+			color: $negro
+	.active
+		a
+			background: $blanco
+			color: $negro
+
+.header__sidebar__top__languages__list
+	display: flex
+	align-items: center
+	span
+		font-size: 10px
+		color: $blanco
+		font-family: $font__001
+		margin: 0
+	ul
+		margin: 0
+		padding: 0
+		display: flex
+		align-items: center
+	li
+		margin: 10px
+		list-style: none
+		&.current-lang
+			a
+				background: $blanco
+				color: $negro
+	a
+		font-size: 10px
+		padding: 5px 10px
+		color: $blanco
+		border: 1px solid $blanco
+		font-family: $font__001
+		transition: all .25s linear
+		&:hover
+			background: $blanco
+			color: $negro
+
+.header__sidebar__bottom
+	padding: 40px 20px
+
+.header__sidebar__nav
+	text-align: center
+	box-sizing: border-box
+	ul
+		margin: 0
+		padding: 0
+	li
+		list-style: none
+		margin-bottom: 40px
+		&:last-child
+			margin-bottom: 0
+	a
+		font-size: 12px
+		font-family: $font__002
+		text-transform: uppercase
+
+.header__sidebar__tel
+	margin-top: 50px
+	ul
+		padding: 0
+		margin: 0
+		display: flex
+		align-items: center
+		justify-content: center
+	li
+		list-style: none
+		margin: 0 15px
+	a
+		display: block
+		text-align: center
+		span
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 25px
+			height: 25px
+			color: $blanco
+			background: $negro
+			border-radius: 5px
+			&:before
+				content: ""
+				width: 17px
+				height: 16px
+				background: url('../images/ico-tel.svg')
+		h3
+			font-size: 12px
+			font-family: $font__001
+			color: $negro
+			margin: 0
+			margin-top: 10px
+
+body.active
+	overflow: hidden
+
+@media screen and (max-width: 960px)
+	.header__top
+		display: none
+
+	.header__wrap
+		height: 60px
+
+	.header__fixed
+		height: 60px
+		top: 0
+	.header__main__nav
+		display: none
+
+	.header__sidebar
+		.header__main__nav
+			display: block
+
+	.header__sidebar__menu
+		display: flex
+	.header__wrap
+		&.header--scrolling
+			.header__fixed
+				transform: translateY(0px)
+
+@media screen and (max-width: 767px)
+	.header__wrap
+		height: 60px
+
+@media screen and (max-width: 480px)
+	.header__sidebar__top
+		padding: 10px 15px 10px 15px

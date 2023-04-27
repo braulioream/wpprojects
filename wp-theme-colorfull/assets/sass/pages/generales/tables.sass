@@ -1,0 +1,192 @@
+.table__g
+	p 
+		margin: 0
+	table 
+		width: 100%
+	thead
+		th:first-child
+			opacity: 0
+			visibility: hidden
+		th
+			border: 1px solid $negro
+			padding: 10px 10px
+			box-sizing: border-box
+			font-size: 14px
+			font-family: $font__003
+			color: $negro
+			height: 53px
+			text-align: center
+	tbody
+		>
+		tr > td:first-child
+			background: #CBCBCB
+			font-family: $font__002
+			color: $color__003
+			*
+				color: $color__003
+		td
+			border: 1px solid $negro
+			box-sizing: border-box
+			text-align: center
+			padding: 10px 10px
+			box-sizing: border-box
+			font-size: 13px
+			font-family: $font__002
+			color: $negro
+			height: 53px
+			width: 2000px
+			text-align: center
+			p
+				margin: 0
+				overflow: hidden
+				height: 33px
+				line-height: 1.35
+
+	tfoot
+		th
+			border: 1px solid $negro
+			padding: 10px 10px
+			box-sizing: border-box
+			font-size: 14px
+			font-family: $font__003
+			color: $negro
+			height: 53px
+			text-align: center
+			
+
+.table__g--two--columns
+	thead
+		th
+			width: 50%
+	tbody
+		td
+			width: 50%
+	tfoot
+		td
+			width: 50%
+
+.table__g--three--columns
+	thead
+		th
+			width: 33.33%
+	tbody
+		td
+			width: 33.33%
+	tfoot
+		td
+			width: 33.33%
+
+.table__g--four--columns
+	thead
+		th
+			width: 25%
+	tbody
+		td
+			width: 25%
+	tfoot
+		td
+			width: 25%
+
+.table__g--five--columns
+	thead
+		th
+			width: 20%
+	tbody
+		td
+			width: 20%
+	tfoot
+		td
+			width: 20%
+
+.table__g--six--columns
+	thead
+		th
+			width: 16.666%
+	tbody
+		td
+			width: 16.666%
+	tfoot
+		td
+			width: 16.666%
+
+.table__g--seven--columns
+	thead
+		th
+			width: 14.285%
+	tbody
+		td
+			width: 14.285%
+	tfoot
+		td
+			width: 14.285%
+			
+
+.table__scroll--x
+	width: 100%
+	overflow: auto
+	table
+		width: 960px
+			
+@media screen and (max-width: 767px)
+	.table__g--responsive thead
+		display: none
+		
+	.table__g--responsive tbody tr
+		display: block
+		width: 100%
+		margin-top: 30px
+
+	.table__g--responsive tbody td
+		display: block
+		width: 100%
+		border: none
+		border-bottom: 1px solid $negro
+		border-right: 1px solid $negro
+
+	.table__g--responsive tbody td:first-child
+		border-top: 1px solid $negro
+
+	// foot
+	.table__g--responsive tfoot tr
+		display: block
+		width: 100%
+		margin-top: 0
+		
+	.table__g--responsive tfoot td
+		display: block
+		width: 100%
+		border: none
+		border-bottom: 1px solid $negro
+		border-right: 1px solid $negro
+		
+	.table__g--responsive tfoot tr .table__g__responsive__cell
+		border-top: none !important
+		
+	.table__g--responsive tfoot td:first-child
+		border-top: 1px solid $negro
+		
+
+	.table__g--responsive .table__g__responsive__cell
+		&:before
+			content: attr(data-text)
+			position: relative
+			top: 0
+			left: 0
+			width: 50%	
+			display: table-cell
+			vertical-align: middle	
+			background: rgba(154,178,191,.3)
+			vertical-align: middle	
+			height: 53px
+			text-transform: uppercase
+			text-align: center
+			color: blue
+			border-left: 1px solid $negro
+			border-right: 1px solid $negro
+			padding: 10px
+			box-sizing: border-box
+
+	.table__g--responsive .table__g__responsive__cell:before
+		font-size: 14px
+
+
